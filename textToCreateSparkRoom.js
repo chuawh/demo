@@ -34,9 +34,6 @@ var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(json
 log("ResponseCode is:" + httpResponse[0]);
 log("The Spark Response is:" + httpResponse[1]);
 
-//var callerNumber=string(currentCall.callerID);
-//var finalNumber=Number(callerNumber.slice(1,8));
-//log("The finalNumber is" + finalNumber);
 
 if (httpResponse[0]==200) {
 message("The Spark Room named " + roomName + " has successfully created", {

@@ -29,14 +29,9 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
 
 if (result.value==1){
       say( "Please wait while we transfer your call");
-      transfer(mobile, {
-            playvalue: "http://www.phono.com/audio/holdmusic.mp3",
-            terminator: "*",
-            onTimeout: function(event) {
-         say("Sorry, but nobody answered");}
-         }
+      transfer(mobile);
       }  
-       else {
+      else {
             say( "Goodbye" );
             hangup();
        }     

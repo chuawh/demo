@@ -1,5 +1,5 @@
 var nbr=mobile;
-var tranferee="+" + nbr;
+var tranferee='+' + nbr;
 
 call('sip:whongchu@cisco.com', {
 	   timeout:60,
@@ -38,4 +38,5 @@ if (result.value==1){
             say( "Goodbye" );
             hangup();
        }     
+       
 

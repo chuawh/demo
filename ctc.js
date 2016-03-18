@@ -9,7 +9,7 @@ call('sip:whongchu@cisco.com', {
 	       wait(500);
 	       say("The use of vehicle is" + UseofVehicle);
 	       wait(500);
-	       say("The caller number is:" + moblie);
+	       say("The caller number is:" + mobile);
 	       log("Obnoxious call complete");
 	   },
 	   onTimeout: function() {

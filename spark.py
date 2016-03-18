@@ -22,3 +22,4 @@ roomInfo = {
 response = http_post("https://api.ciscospark.com/v1/rooms",headers,roomInfo)
 data = json.load(response)   
 log(data["id"])
+log(data["created"])

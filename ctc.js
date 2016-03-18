@@ -39,4 +39,4 @@ if (result.value==1)
             say( "Goodbye" );
             hangup();
 }
-*/
+

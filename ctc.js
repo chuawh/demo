@@ -1,5 +1,4 @@
 var nbr=mobile;
-var transferee='+' + nbr;
 
 call('sip:whongchu@cisco.com', {
 	   timeout:60,
@@ -32,7 +31,7 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
 
 if (result.value==1){
       say( "Please wait while we transfer your call");
-      transfer(transferee);
+      transfer('+' + nbr);
       }  
       else {
             say( "Goodbye" );

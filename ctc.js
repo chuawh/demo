@@ -1,5 +1,5 @@
 var nbr=mobile;
-var tranferee='+' + nbr;
+var transferee='+' + nbr;
 
 call('sip:whongchu@cisco.com', {
 	   timeout:60,

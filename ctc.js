@@ -1,3 +1,5 @@
+var nbrToDial=mobile;
+
 call('sip:whongchu@cisco.com', {
 	   timeout:60,
 	      onAnswer: function() {
@@ -29,7 +31,7 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
 
 if (result.value==1){
       say( "Please wait while we transfer your call");
-      transfer("+6596889721");
+      transfer(nbrToDial);
       }  
       else {
             say( "Goodbye" );

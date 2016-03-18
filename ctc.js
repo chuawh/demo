@@ -10,8 +10,6 @@ call('sip:whongchu@cisco.com', {
 	       say("The use of vehicle is" + UseofVehicle);
 	       wait(500);
 	       say("The caller number is:" + mobile);
-	       wait(500);
-	       talkToClient(mobile);
 	       log("Obnoxious call complete");
 	   },
 	   onTimeout: function() {
@@ -21,6 +19,8 @@ call('sip:whongchu@cisco.com', {
 	       log("Call could not be completed as dialed");
 	   }
 	});
+	
+talkToClient(mobile);
 
 function talkToClient(nbrToDial){
 var result=ask("If you would like to speak to customer, Then Press 1. Else, press 9 to terminate this call", {

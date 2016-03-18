@@ -1,19 +1,24 @@
 import requests
-import json
+import urllib2
 
-token="Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4"
-roomName="AAA"
+SPARK_API_TOKEN="Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4"
 
-def _url(path):
-    return 'https://api.ciscospark.com/v1' + path
-    
-#POST Requests
-def post_createroom(at,title):
-    headers = {'Authorization':at, 'content-type':'application/json'}
-    payload = {'title':title}
-    resp = requests.post(url=_url('/rooms'),json=payload, headers=headers)
-    dict = json.loads(resp.text)
-    dict['statuscode']=str(resp.status_code)
-    return dict
-    
-post_createroom(token,roomName)
+def http_post(url,headers,data):
+    req = urllib2.Request(url,headers=headers)
+    response = urllib2.urlopen(req, json.dumps(data))
+    return response
+
+
+# Auth header for the HTTP requests
+headers = {
+	"Authorization": "Bearer "+SPARK_API_TOKEN,
+	"Content-type": "application/json"
+}
+
+##  Create the room
+roomInfo = {
+	"title": "Tropo Python"
+}
+response = http_post("https://api.ciscospark.com/v1/rooms",headers,roomInfo)
+data = json.load(response)   
+log(data["id"])

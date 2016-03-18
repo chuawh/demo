@@ -26,7 +26,7 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
     timeout:15.0,
     mode:"dtmf",
     interdigitTimeout: 5,});
-/*
+
 if (result.value==1){
       say( "Please wait while we transfer your call");
       transfer(mobile, {
@@ -35,9 +35,9 @@ if (result.value==1){
             onTimeout: function(event) {
          say("Sorry, but nobody answered");}
          }
-       else
+      }  
+       else {
             say( "Goodbye" );
             hangup();
-}
-*/
+       }     
 

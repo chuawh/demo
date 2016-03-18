@@ -27,7 +27,7 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
     mode:"dtmf",
     interdigitTimeout: 5,});
 
-if (result.value=='1') {
+if (result.value==1)
       say( "Please wait while we transfer your call");
       transfer(mobile, {
             playvalue: "http://www.phono.com/audio/holdmusic.mp3",
@@ -39,4 +39,4 @@ if (result.value=='1') {
             say( "Goodbye" );
             hangup();
 }
-
+*/

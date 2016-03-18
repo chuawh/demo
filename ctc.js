@@ -10,6 +10,7 @@ call('sip:whongchu@cisco.com', {
 	       say("The use of vehicle is" + UseofVehicle);
 	       wait(500);
 	       say("The caller number is:" + moblie);
+	       wait(500);
 	       log("Obnoxious call complete");
 	   },
 	   onTimeout: function() {
@@ -19,3 +20,19 @@ call('sip:whongchu@cisco.com', {
 	       log("Call could not be completed as dialed");
 	   }
 	});
+
+function talkToClient(){
+var result=ask("If you would like to speak to customer, Then Press 1 ", {
+    choices:"[1]",
+    terminator:"#",
+    timeout:15.0,
+    mode:"dtmf",
+    interdigitTimeout: 5,});
+
+       if (result.value=="1")
+            say( "Please wait while we transfer your call");
+       else
+            say( "Goodbye" );
+            hangup();
+    }
+}

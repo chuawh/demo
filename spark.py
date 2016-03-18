@@ -1,4 +1,4 @@
-import requests
+import json
 import urllib2
 
 SPARK_API_TOKEN="Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4"

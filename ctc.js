@@ -27,15 +27,18 @@ call('sip:whongchu@cisco.com', {
 	       wait(500);
 	      // say("The Car Registration Number is" + CarRegistrationNumber);
 	       say("The Car Registration Number is");
-	       say_as(CarRegistrationNumber,'number');
+	       say_as(CarRegistrationNumber,'digits');
 	       wait(500);
-	       say("The estimated car value is" + Carvalue);
+	       //say("The estimated car value is" + Carvalue);
+	       say("The estimated car value is");
+	       say_as(Carvalue,'currency');
 	       wait(500);
 	       say("The use of vehicle is" + UseofVehicle);
 	       wait(500);
 	       //say("The caller number is:" + mobile);
 	       say("The caller number is");
 	       say_as(mobile,'phone');
+	       wait(1000);
 	       log("Obnoxious call complete");
 	   },
 	   onTimeout: function() {

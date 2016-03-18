@@ -1,11 +1,33 @@
 var nbr=mobile;
 
+function say_as(value,type){
+    ssml_start="<?xml version='1.0'?><speak>";
+    ssml_end="</say-as></speak>";
+    ssml ="<say-as interpret-as='vxml:"+ type + "'>" + value+"";
+    //ssml_tts="<s>안녕하세요.만아서 반갑습니다.</s>";
+    complete_string = ssml_start + ssml + ssml_end;
+    log('@@ Say as: ' + complete_string);
+    say(complete_string);
+}
+ 
+//wait(3000);
+/* 
+say_as('USD51.33','currency');
+say_as('20314253','digits');
+say_as('2031.435','number');
+say_as('4075551212','phone');
+say_as('20090226','date');
+say_as('0515a','time');
+*/
+
 call('sip:whongchu@cisco.com', {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("You have a new insurance query");
 	       wait(500);
-	       say("The Car Registration Number is" + CarRegistrationNumber);
+	      // say("The Car Registration Number is" + CarRegistrationNumber);
+	       say("The Car Registration Number is");
+	       say_as(CarRegistrationNumber,'number');
 	       wait(500);
 	       say("The estimated car value is" + Carvalue);
 	       wait(500);

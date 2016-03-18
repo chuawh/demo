@@ -20,11 +20,6 @@ call('sip:whongchu@cisco.com', {
 	   }
 	});
 	
-
-
-talk(mobile);
-
-function talk(nbrToDial){
 var result=ask("If you would like to speak to customer, Then Press 1. Else, press 9 to terminate this call", {
     choices:"1,9",
     terminator:"#",
@@ -32,16 +27,16 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
     mode:"dtmf",
     interdigitTimeout: 5,});
 
-    if (result.value=="1")
-         say( "Please wait while we transfer your call");
-         /*transfer(nbrToDial, {
+/*if (result.value=="1")
+      say( "Please wait while we transfer your call");
+      transfer("+6596889721", {
             playvalue: "http://www.phono.com/audio/holdmusic.mp3",
             terminator: "*",
             onTimeout: function(event) {
          say("Sorry, but nobody answered");}
-         }*/
+         }
        else
             say( "Goodbye" );
             hangup();
 }
-
+*/

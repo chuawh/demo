@@ -23,8 +23,8 @@ call('sip:whongchu@cisco.com', {
 	});
 
 function talkToClient(nbrToDial){
-var result=ask("If you would like to speak to customer, Then Press 1 ", {
-    choices:"[1]",
+var result=ask("If you would like to speak to customer, Then Press 1. Else, press 9 to terminate this call", {
+    choices:"1,9",
     terminator:"#",
     timeout:15.0,
     mode:"dtmf",

@@ -19,10 +19,11 @@ call('sip:whongchu@cisco.com', {
 	       log("Call could not be completed as dialed");
 	   }
 	});
-	
-talkToClient(mobile);
 
-function talkToClient(nbrToDial){
+/*	
+talk(mobile);
+
+function talk(nbrToDial){
 var result=ask("If you would like to speak to customer, Then Press 1. Else, press 9 to terminate this call", {
     choices:"1,9",
     terminator:"#",
@@ -43,3 +44,4 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
             hangup();
     }
 }
+*/

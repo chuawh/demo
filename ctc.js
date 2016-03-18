@@ -31,7 +31,7 @@ call('sip:whongchu@cisco.com', {
 	       wait(500);
 	       //say("The estimated car value is" + Carvalue);
 	       say("The estimated car value is");
-	       say_as(Carvalue,'currency');
+	       say_as(Carvalue,'number');
 	       wait(500);
 	       say("The use of vehicle is" + UseofVehicle);
 	       wait(500);

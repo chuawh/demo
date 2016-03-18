@@ -21,7 +21,7 @@ call('sip:whongchu@cisco.com', {
 	});
 	
 
-/*	
+
 talk(mobile);
 
 function talk(nbrToDial){
@@ -45,4 +45,4 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
             hangup();
     }
 }
-*/
+

@@ -2,8 +2,7 @@ import requests
 import json
 
 token="Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4"
-roomName="ABC"
-
+roomName="AAA"
 
 def _url(path):
     return 'https://api.ciscospark.com/v1' + path

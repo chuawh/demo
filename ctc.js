@@ -27,7 +27,7 @@ call('sip:whongchu@cisco.com', {
 	       wait(500);
 	      // say("The Car Registration Number is" + CarRegistrationNumber);
 	       say("The Car Registration Number is");
-	       say_as(CarRegistrationNumber,'number');
+	       say_as(CarRegistrationNumber,'digits');
 	       wait(500);
 	       say("The estimated car value is" + Carvalue);
 	       wait(500);

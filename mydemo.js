@@ -2,11 +2,11 @@ importPackage(java.net);
 importPackage(java.io);
 importPackage(java.util);
 
-function post(urlString, body) {
+function httpRequest(urlString, body,method) {
     var url = new URL(urlString);
     log("Opening connection.");
     var connection = url.openConnection();
-    connection.setRequestMethod("POST");
+    connection.setRequestMethod(method);
     connection.setDoOutput(true);
     connection.setRequestProperty('Content-Type', 'application/json');
     connection.setRequestProperty('Authorization', 'Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4');
@@ -43,7 +43,7 @@ var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waitin
 function createRoom(str1){
 var jsonRoomName={'title':str1};
 log("********** The Room Name is ----> " + roomName + "*******************");
-var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName));
+var httpResponse= httpRequest("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName),"post");
 log("ResponseCode is:" + httpResponse[0]);
 log("The Spark Response is:" + httpResponse[1]);
 
@@ -61,7 +61,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   addMember(room.id,'weihong.chua@tropo.com');
 }
 */
-
+/*
 function postMessage(str2,str3,str4){
 var messageJson={'roomId':str2, 'text':str3,'files':[str4]}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson));
@@ -80,5 +80,5 @@ log("The Spark Response is:" + httpResponse2[1]);
 function getRoomDetail(){
 	
 }
-
+*/
 createRoom(roomName);

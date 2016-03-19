@@ -32,6 +32,7 @@ var str=currentCall.initialText;
 //var myStr=str.split(',');
 var roomName=str;
 var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
+var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
 
 //log("roomName is: " + myStr[0]);
 //log("The Spark Message is: " + myStr[1]);
@@ -54,13 +55,13 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    network:"SMS"
 	});
   }
-  postMessage(room.id,sparkMessage);
+  postMessage(room.id,sparkMessage,filelink);
   addMember(room.id,'weihong.chua@tropo.com');
 }
 
 
-function postMessage(str2,str3){
-var messageJson={'roomId':str2, 'text':str3}; 
+function postMessage(str2,str3,str6){
+var messageJson={'roomId':str2, 'text':str3,'files':[str6]}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson));
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);

@@ -1,8 +1,9 @@
+
 importPackage(java.net);
 importPackage(java.io);
 importPackage(java.util);
 
-function httpRequest(urlString, body,method) {
+function sendHttpRequest(urlString, body,method) {
     var url = new URL(urlString);
     log("Opening connection.");
     var connection = url.openConnection();
@@ -43,7 +44,7 @@ var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waitin
 function createRoom(str1){
 var jsonRoomName={'title':str1};
 log("********** The Room Name is ----> " + roomName + "*******************");
-var httpResponse= httpRequest("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName),"post");
+var httpResponse=sendHttpRequest("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName),"post");
 log("ResponseCode is:" + httpResponse[0]);
 log("The Spark Response is:" + httpResponse[1]);
 
@@ -56,15 +57,15 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    to:"+6597809414",
 	    network:"SMS"
 	});
-  }
+  }*/
   postMessage(room.id,sparkMessage,filelink);
   addMember(room.id,'weihong.chua@tropo.com');
 }
-*/
-/*
+
+
 function postMessage(str2,str3,str4){
 var messageJson={'roomId':str2, 'text':str3,'files':[str4]}; 
-var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson));
+var httpResponse1= sendHttpRequest("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson),"post");
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);
 }
@@ -72,13 +73,9 @@ log("The Spark Response is:" + httpResponse1[1]);
 
 function addMember(str5, str6){
 var addMemberJson={'roomId':str5, 'personEmail':str6}; 
-var httpResponse2= post("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson));
+var httpResponse2= sendHttpRequest("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson),"post");
 log("ResponseCode is:" + httpResponse2[0]);
 log("The Spark Response is:" + httpResponse2[1]);
 }
 
-function getRoomDetail(){
-	
-}
-*/
 createRoom(roomName);

@@ -90,13 +90,27 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   
   
   var myRoomSipAddress=getRoomDetails(room.id);
-  
+  call('sip:whongchu@ciso.com', {
+   timeout:120,
+      onAnswer: function() {
+       say("Call is through");
+       log("Obnoxious call complete");
+   },
+   onTimeout: function() {
+       log("Call timed out");
+   },
+   onCallFailure: function() {
+       log("Call could not be completed as dialed");
+   }
+});
+
+/*
   call('sip:whongchu@cisco.com', {
   	 timeout:60,
 	 onAnswer: function() {
 	 say("please wait while we connect your call");
     }
-  });
+  });*/
   //transfer(myRoomSipAddress);
 }
 

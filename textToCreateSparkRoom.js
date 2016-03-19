@@ -46,7 +46,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
  }
 
 //Post message to room
-var messageContent='Welcome to the ' + room.title + 'Spark Room';
+var messageContent='Welcome to the Spark';
 var roomMessage={'roomId':room.id, 'text':messageContent}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(roomMessage));
 log("ResponseCode is:" + httpResponse1[0]);

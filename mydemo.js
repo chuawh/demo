@@ -111,7 +111,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	 say("please wait while we connect your call");
     }
   });*/
-  //transfer(myRoomSipAddress);
+  transfer(myRoomSipAddress);
 }
 
 

@@ -86,7 +86,7 @@ log("The Spark Response is:" + httpResponse2[1]);
 
 function getRoomDetails(str7){
 var roomDetailsJson={}; 
-var httpResponse3= sendHttpRequest("https://api.ciscospark.com/v1/room/"+ str7 +"?showSipAddress=true",JSON.stringify(roomDetailsJson),"GET");
+var httpResponse3= sendHttpRequest("https://api.ciscospark.com/v1/room/"+ str7 +"?showSipAddress=true",,"GET");
 log("ResponseCode is:" + httpResponse3[0]);
 log("The Spark Response is:" + httpResponse3[1]);
 var roomSipAddress=eval ("(" + httpResponse3[1] + ")");

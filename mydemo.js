@@ -84,7 +84,7 @@ log("addMember ResponseCode is:" + httpResponse2[0]);
 log("The Spark addMember Response is:" + httpResponse2[1]);
 }
 
-
+/*
 function getRoomDetails(str7){
 var roomDetailsJson={}; 
 var httpResponse3= sendHttpRequest("https://api.ciscospark.com/v1/rooms/"+ str7 +"?showSipAddress=true",,"GET");
@@ -93,6 +93,6 @@ log("The Spark getRoomDetails Response is:" + httpResponse3[1]);
 var roomSipAddress=eval ("(" + httpResponse3[1] + ")");
 log("The Spark Room SipAddress is: " + roomSipAddress.sipAddress);
 return(roomSipAddress.sipAddress);
-}
+}*/
 
 createRoom(roomName);

@@ -27,7 +27,12 @@ function post(urlString, body) {
     return [responseCode, result];  
 }
 
-var roomName=currentCall.initialText;
+//Get the content from SMS
+var str=currentCall.initialText;
+var myStr=str.split(',');
+var RoomName=myStr[0];
+var sparkMessage=myStr[1];
+
 //createRoom
 
 function createRoom(str1){
@@ -46,7 +51,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    network:"SMS"
 	});
   }
-  postMessage(room.id);
+  postMessage(room.id,sparkMessage);
 }
 
 
@@ -54,6 +59,13 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 function postMessage(str2){
 var messageContent='Welcome to the Spark';
 var roomMessage={'roomId':str2, 'text':messageContent}; 
+var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(roomMessage));
+log("ResponseCode is:" + httpResponse1[0]);
+log("The Spark Response is:" + httpResponse1[1]);
+}
+
+unction postMessage(str2,str3){
+var roomMessage={'roomId':str2, 'text':str3}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(roomMessage));
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);

@@ -44,7 +44,7 @@ var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waitin
 function createRoom(str1){
 var jsonRoomName={'title':str1};
 log("********** The Room Name is ----> " + roomName + "*******************");
-var httpResponse=sendHttpRequest("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName),"post");
+var httpResponse=sendHttpRequest("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName),"POST");
 log("ResponseCode is:" + httpResponse[0]);
 log("The Spark Response is:" + httpResponse[1]);
 
@@ -65,7 +65,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 
 function postMessage(str2,str3,str4){
 var messageJson={'roomId':str2, 'text':str3,'files':[str4]}; 
-var httpResponse1= sendHttpRequest("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson),"post");
+var httpResponse1= sendHttpRequest("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson),"POST");
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);
 }
@@ -73,7 +73,7 @@ log("The Spark Response is:" + httpResponse1[1]);
 
 function addMember(str5, str6){
 var addMemberJson={'roomId':str5, 'personEmail':str6}; 
-var httpResponse2= sendHttpRequest("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson),"post");
+var httpResponse2= sendHttpRequest("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson),"POST");
 log("ResponseCode is:" + httpResponse2[0]);
 log("The Spark Response is:" + httpResponse2[1]);
 }

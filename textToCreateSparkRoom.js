@@ -55,7 +55,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	});
   }
   postMessage(room.id,sparkMessage);
-  addMember(room.id,'weihong.chua@tropo.com')
+  addMember(room.id,'weihong.chua@tropo.com');
 }
 
 
@@ -72,7 +72,6 @@ var addMemberJson={'roomId':str4, 'personEmail':str5,'isModerator': false};
 var httpResponse2= post("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson));
 log("ResponseCode is:" + httpResponse2[0]);
 log("The Spark Response is:" + httpResponse2[1]);
-}
 }
 
 createRoom(roomName);

@@ -63,7 +63,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   
   var myRoomSipAddress=getRoomDetails(room.id)
   call('sip:whongchu@cisco.com');
-  say('please wait while we connect your call');
+  say("please wait while we connect your call");
   transfer(myRoomSipAddress);
 }
 

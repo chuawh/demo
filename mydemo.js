@@ -28,21 +28,21 @@ function sendHttpRequest(urlString, body,method) {
     return [responseCode, result];  
 }
 
-/*
+
 function sendGetHttpRequest(urlString,method) {
     var url = new URL(urlString);
     log("Opening connection.");
     var connection = url.openConnection();
     connection.setRequestMethod(method);
-    connection.setDoOutput(true);
+    //connection.setDoOutput(true);
     connection.setRequestProperty('Content-Type', 'application/json');
     connection.setRequestProperty('Authorization', 'Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4');
 
-     log("Sending output.");
-     var output = new DataOutputStream(connection.getOutputStream());
+    // log("Sending output.");
+     //var output = new DataOutputStream(connection.getOutputStream());
    // output.writeBytes(body);
-     output.flush();
-     output.close();
+    // output.flush();
+     //output.close();
     
     var responseCode = connection.getResponseCode();
     log("Response is: " + responseCode);
@@ -53,7 +53,7 @@ function sendGetHttpRequest(urlString,method) {
     scanner.close();
     return [responseCode, result];  
 }
-*/
+
 
 //Get the content from SMS
 //var str=currentCall.initialText;
@@ -114,7 +114,7 @@ log("The Spark addMember Response is:" + httpResponse2[1]);
 
 function getRoomDetails(str7){
 //var roomDetailsJson=null; 
-var httpResponse3= sendHttpRequest("https://api.ciscospark.com/v1/rooms/" + str7 + "?showSipAddress=true",JSON.stringify(),"GET");
+var httpResponse3= sendGetHttpRequest("https://api.ciscospark.com/v1/rooms/" + str7 + "?showSipAddress=true","GET");
 log("getRoomDetails ResponseCode is:" + httpResponse3[0]);
 log("The Spark getRoomDetails Response is:" + httpResponse3[1]);
 var roomSipAddress=eval ("(" + httpResponse3[1] + ")");

@@ -113,7 +113,7 @@ log("The Spark addMember Response is:" + httpResponse2[1]);
 
 
 function getRoomDetails(str7){
-var roomDetailsJson=; 
+var roomDetailsJson=null; 
 var httpResponse3= sendHttpRequest("https://api.ciscospark.com/v1/rooms/"+ str7 +"?showSipAddress=true",JSON.stringify(roomDetailsJson),"GET");
 log("getRoomDetails ResponseCode is:" + httpResponse3[0]);
 log("The Spark getRoomDetails Response is:" + httpResponse3[1]);

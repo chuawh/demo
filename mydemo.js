@@ -72,24 +72,24 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 function postMessage(str2,str3,str4){
 var messageJson={'roomId':str2, 'text':str3,'files':[str4]}; 
 var httpResponse1= sendHttpRequest("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson),"POST");
-log("ResponseCode is:" + httpResponse1[0]);
-log("The Spark Response is:" + httpResponse1[1]);
+log("postMessage ResponseCode is:" + httpResponse1[0]);
+log("The Spark postMessage Response is:" + httpResponse1[1]);
 }
 
 
 function addMember(str5, str6){
 var addMemberJson={'roomId':str5, 'personEmail':str6}; 
 var httpResponse2= sendHttpRequest("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson),"POST");
-log("ResponseCode is:" + httpResponse2[0]);
-log("The Spark Response is:" + httpResponse2[1]);
+log("addMember ResponseCode is:" + httpResponse2[0]);
+log("The Spark addMember Response is:" + httpResponse2[1]);
 }
 
 
 function getRoomDetails(str7){
 var roomDetailsJson={}; 
 var httpResponse3= sendHttpRequest("https://api.ciscospark.com/v1/rooms/"+ str7 +"?showSipAddress=true",,"GET");
-log("ResponseCode is:" + httpResponse3[0]);
-log("The Spark Response is:" + httpResponse3[1]);
+log("getRoomDetails ResponseCode is:" + httpResponse3[0]);
+log("The Spark getRoomDetails Response is:" + httpResponse3[1]);
 var roomSipAddress=eval ("(" + httpResponse3[1] + ")");
 log("The Spark Room SipAddress is: " + roomSipAddress.sipAddress);
 return(roomSipAddress.sipAddress);

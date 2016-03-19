@@ -28,7 +28,8 @@ function post(urlString, body) {
 }
 
 //Get the content from SMS
-var str=currentCall.initialText;
+//var str=currentCall.initialText;
+var str=texting;
 //var myStr=str.split(',');
 var roomName=str;
 var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;

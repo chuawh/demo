@@ -56,11 +56,11 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    to:"+6597809414",
 	    network:"SMS"
 	});
-  }
+  }*/
   postMessage(room.id,sparkMessage,filelink);
   addMember(room.id,'weihong.chua@tropo.com');
 }
-*/
+
 
 function postMessage(str2,str3,str4){
 var messageJson={'roomId':str2, 'text':str3,'files':[str4]}; 

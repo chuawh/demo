@@ -68,7 +68,7 @@ log("The Spark Response is:" + httpResponse1[1]);
 
 
 function addMember(str4, str5){
-var addMemberJson={'roomId':str4, 'personEmail':str5,'isModerator': false}; 
+var addMemberJson={'roomId':str4, 'personEmail':str5}; 
 var httpResponse2= post("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson));
 log("ResponseCode is:" + httpResponse2[0]);
 log("The Spark Response is:" + httpResponse2[1]);

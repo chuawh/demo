@@ -50,6 +50,7 @@ log("The Spark Response is:" + httpResponse[1]);
 var room=eval ("(" + httpResponse[1] + ")");
 log("The Spark Room ID is:" + room.id);
 
+/*
 if (httpResponse[0]==200) {
 message("The Spark Room named " + roomName + " has successfully created." + "The Room id is " + room.id, {
 	    to:"+6597809414",
@@ -59,18 +60,18 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   postMessage(room.id,sparkMessage,filelink);
   addMember(room.id,'weihong.chua@tropo.com');
 }
+*/
 
-
-function postMessage(str2,str3,str6){
-var messageJson={'roomId':str2, 'text':str3,'files':[str6]}; 
+function postMessage(str2,str3,str4){
+var messageJson={'roomId':str2, 'text':str3,'files':[str4]}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson));
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);
 }
 
 
-function addMember(str4, str5){
-var addMemberJson={'roomId':str4, 'personEmail':str5}; 
+function addMember(str5, str6){
+var addMemberJson={'roomId':str5, 'personEmail':str6}; 
 var httpResponse2= post("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson));
 log("ResponseCode is:" + httpResponse2[0]);
 log("The Spark Response is:" + httpResponse2[1]);

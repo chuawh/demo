@@ -20,7 +20,7 @@ say_as('20090226','date');
 say_as('0515a','time');
 */
 
-call('sip:whongchu@cisco.com', {
+call('+' + agentNumber, {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("You have a new insurance query");

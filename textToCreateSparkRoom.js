@@ -34,9 +34,11 @@ var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(json
 log("ResponseCode is:" + httpResponse[0]);
 log("The Spark Response is:" + httpResponse[1]);
 
+var room=eval ("(" + httpResponse[1] + ")");
+log("The Spark Room ID is:" + room.id);
 
 if (httpResponse[0]==200) {
-message("The Spark Room named " + roomName + " has successfully created", {
+message("The Spark Room named " + roomName + " has successfully created." + "The Room id is " + room.id, {
 	    to:"+6597809414",
 	    network:"SMS"
 	});

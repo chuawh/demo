@@ -29,7 +29,9 @@ function post(urlString, body) {
 
 var roomName=currentCall.initialText;
 //createRoom
-var jsonRoomName={'title':roomName};
+
+function createRoom(str1){
+var jsonRoomName={'title':str1};
 log("********** The Room Name is ----> " + roomName + "*******************");
 var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName));
 log("ResponseCode is:" + httpResponse[0]);
@@ -43,15 +45,18 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    to:"+6597809414",
 	    network:"SMS"
 	});
- }
- 
- postMessage(room.id);
+  }
+  postMessage(room.id);
+}
+
 
 //Post message to room
-function postMessage(str){
+function postMessage(str2){
 var messageContent='Welcome to the Spark';
-var roomMessage={'roomId':str, 'text':messageContent}; 
+var roomMessage={'roomId':str2, 'text':messageContent}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(roomMessage));
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);
 }
+
+createRoom(roomName);

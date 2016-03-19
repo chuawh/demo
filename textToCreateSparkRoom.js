@@ -55,23 +55,24 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	});
   }
   postMessage(room.id,sparkMessage);
+  addMember(room.id,'weihong.chua@tropo.com')
 }
 
-
-//Post message to room
-//function postMessage(str2){
-//var messageContent='Welcome to the Spark';
-//var roomMessage={'roomId':str2, 'text':messageContent}; 
-//var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(roomMessage));
-//log("ResponseCode is:" + httpResponse1[0]);
-//log("The Spark Response is:" + httpResponse1[1]);
-//}
 
 function postMessage(str2,str3){
 var messageJson={'roomId':str2, 'text':str3}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson));
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);
+}
+
+
+function addMember(str4, str5){
+var addMemberJson={'roomId':str4, 'personEmail':str5,'isModerator': false}; 
+var httpResponse2= post("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson));
+log("ResponseCode is:" + httpResponse2[0]);
+log("The Spark Response is:" + httpResponse2[1]);
+}
 }
 
 createRoom(roomName);

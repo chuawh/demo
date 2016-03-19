@@ -39,10 +39,10 @@ function sendGetHttpRequest(urlString,method) {
     connection.setRequestProperty('Authorization', 'Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4');
 
      log("Sending output.");
-      var output = new DataOutputStream(connection.getOutputStream());
+     var output = new DataOutputStream(connection.getOutputStream());
    // output.writeBytes(body);
-      output.flush();
-      output.close();
+     output.flush();
+     output.close();
     
     var responseCode = connection.getResponseCode();
     log("Response is: " + responseCode);
@@ -87,11 +87,11 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   postMessage(room.id,sparkMessage,filelink);
   addMember(room.id,'weihong.chua@tropo.com');
   
-  /*
+  
   var myRoomSipAddress=getRoomDetails(room.id);
   call('sip:whongchu@cisco.com');
   say("please wait while we connect your call");
-  transfer(myRoomSipAddress);*/
+  transfer(myRoomSipAddress);
 }
 
 
@@ -112,7 +112,7 @@ log("The Spark addMember Response is:" + httpResponse2[1]);
 
 
 function getRoomDetails(str7){
-var roomDetailsJson={}; 
+//var roomDetailsJson={}; 
 var httpResponse3= sendGetHttpRequest("https://api.ciscospark.com/v1/rooms/"+ str7 +"?showSipAddress=true","GET");
 log("getRoomDetails ResponseCode is:" + httpResponse3[0]);
 log("The Spark getRoomDetails Response is:" + httpResponse3[1]);

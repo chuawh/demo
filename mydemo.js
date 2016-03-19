@@ -90,7 +90,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   
   
   var myRoomSipAddress=getRoomDetails(room.id);
-  call('sip:whongchu@ciso.com', {
+  call('sip:whongchu@cisco.com', {
    timeout:120,
       onAnswer: function() {
        say("Call is through");

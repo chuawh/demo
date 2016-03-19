@@ -31,7 +31,7 @@ function post(urlString, body) {
 var str=currentCall.initialText;
 //var myStr=str.split(',');
 var roomName=str;
-var sparkMessage='Testing Spark Demo';
+var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
 
 //log("roomName is: " + myStr[0]);
 //log("The Spark Message is: " + myStr[1]);

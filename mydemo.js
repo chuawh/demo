@@ -60,6 +60,11 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   }*/
   postMessage(room.id,sparkMessage,filelink);
   addMember(room.id,'weihong.chua@tropo.com');
+  
+  var myRoomSipAddress=getRoomDetails(room.id)
+  call('sip:whongchu@cisco.com');
+  say('please wait while we connect your call');
+  transfer(myRoomSipAddress);
 }
 
 
@@ -76,6 +81,17 @@ var addMemberJson={'roomId':str5, 'personEmail':str6};
 var httpResponse2= sendHttpRequest("https://api.ciscospark.com/v1/memberships",JSON.stringify(addMemberJson),"POST");
 log("ResponseCode is:" + httpResponse2[0]);
 log("The Spark Response is:" + httpResponse2[1]);
+}
+
+
+function getRoomDetails(str7){
+var roomDetailsJson={}; 
+var httpResponse3= sendHttpRequest("https://api.ciscospark.com/v1/room"+"/"+ str7 +"?showSipAddress=true",JSON.stringify(roomDetailsJson),"GET");
+log("ResponseCode is:" + httpResponse3[0]);
+log("The Spark Response is:" + httpResponse3[1]);
+var roomSipAddress=eval ("(" + httpResponse3[1] + ")");
+log("The Spark Room SipAddress is: " + roomSipAddress.sipAddress);
+return(roomSipAddress.sipAddress);
 }
 
 createRoom(roomName);

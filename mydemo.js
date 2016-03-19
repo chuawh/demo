@@ -54,6 +54,7 @@ function sendGetHttpRequest(urlString,method) {
     return [responseCode, result];  
 }
 
+
 //Get the content from SMS
 //var str=currentCall.initialText;
 var str=texting;
@@ -119,6 +120,6 @@ log("The Spark getRoomDetails Response is:" + httpResponse3[1]);
 var roomSipAddress=eval ("(" + httpResponse3[1] + ")");
 log("The Spark Room SipAddress is: " + roomSipAddress.sipAddress);
 return(roomSipAddress.sipAddress);
-}*/
+}
 
 createRoom(roomName);

@@ -29,12 +29,12 @@ function post(urlString, body) {
 
 //Get the content from SMS
 var str=currentCall.initialText;
-var myStr=str.split(',');
-var roomName=myStr[0];
-var sparkMessage=myStr[1];
+//var myStr=str.split(',');
+var roomName=str;
+var sparkMessage='Testing Spark Demo';
 
-log("roomName is: " + myStr[0]);
-log("The Spark Message is: " + myStr[1]);
+//log("roomName is: " + myStr[0]);
+//log("The Spark Message is: " + myStr[1]);
 
 //createRoom
 

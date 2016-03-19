@@ -44,7 +44,6 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    network:"SMS"
 	});
  }
-}
 
 //Post message to room
 var messageContent='Welcome to the ' + room.title + 'Spark Room';

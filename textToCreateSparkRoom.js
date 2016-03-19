@@ -33,7 +33,7 @@ var myStr=str.split(',');
 var roomName=myStr[0];
 var sparkMessage=myStr[1];
 
-og("roomName is: " + myStr[0]);
+log("roomName is: " + myStr[0]);
 log("The Spark Message is: " + myStr[1]);
 
 //createRoom

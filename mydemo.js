@@ -93,7 +93,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   call('+6596889721', {
    timeout:120,
       onAnswer: function() {
-       say("Call is through");
+       say("Please wait while we connect your call");
        log("Obnoxious call complete");
    },
    onTimeout: function() {

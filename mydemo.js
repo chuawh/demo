@@ -57,7 +57,7 @@ var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
 var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
 
 //createRoom
-function createRoom(str1){
+function startMyDemo(str1){
 var jsonRoomName={'title':str1};
 log("********** The Room Name is ----> " + roomName + "*******************");
 var httpResponse=sendHttpRequest("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName),"POST");
@@ -121,4 +121,4 @@ log("The Spark Room SipAddress is: " + roomSipAddress.sipAddress);
 return(roomSipAddress.sipAddress);
 }
 
-createRoom(roomName);
+ startMyDemo(roomName);

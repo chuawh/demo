@@ -56,11 +56,7 @@ var roomName=str;
 var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
 var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
 
-//log("roomName is: " + myStr[0]);
-//log("The Spark Message is: " + myStr[1]);
-
 //createRoom
-
 function createRoom(str1){
 var jsonRoomName={'title':str1};
 log("********** The Room Name is ----> " + roomName + "*******************");

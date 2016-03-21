@@ -144,6 +144,7 @@ return(roomSipAddress.sipAddress);
 
 function readFile(){
 var httpResponse4=sendGetHttpRequest("https://raw.githubusercontent.com/chuawh/demo/master/data.json","GET");
+log("readFile is :" + httpResponse4[1]);
 var content=eval ("(" + httpResponse4[1] + ")");
 return(content);
 }

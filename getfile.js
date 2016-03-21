@@ -72,7 +72,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    to:"+6597809414",
 	    network:"SMS"
 	});
-  }*/
+  }
   postMessage(room.id,sparkMessage,filelink);
   addMember(room.id,'weihong.chua@tropo.com');
   
@@ -113,7 +113,7 @@ log("The Spark addMember Response is:" + httpResponse2[1]);
 
 */
 
-function getFile(str7){
+function getFile(){
 var httpResponse3= sendGetHttpRequest("https://api.ciscospark.com/v1/rooms/" + str7 + "?showSipAddress=true","GET");
 log("getRoomDetails ResponseCode is:" + httpResponse3[0]);
 log("The Spark getRoomDetails Response is:" + httpResponse3[1]);

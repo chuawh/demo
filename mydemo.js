@@ -53,8 +53,13 @@ function sendGetHttpRequest(urlString,method) {
 var str=texting;
 //var myStr=str.split(',');
 var roomName=str;
-var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
-var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
+var info=readFile();
+
+var sparkMessage=info.message + roomName;
+var filelink=info.fileUrl
+var agentNumber=info.agent
+//var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
+//var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
 
 //createRoom
 function startMyDemo(str1){
@@ -79,7 +84,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   
   
   var myRoomSipAddress=getRoomDetails(room.id);
-  call('+6596889721', {
+  call(agentNumber, {
    timeout:120,
       onAnswer: function() {
        say("Please wait while we connect your call");
@@ -119,6 +124,12 @@ log("The Spark getRoomDetails Response is:" + httpResponse3[1]);
 var roomSipAddress=eval ("(" + httpResponse3[1] + ")");
 log("The Spark Room SipAddress is: " + roomSipAddress.sipAddress);
 return(roomSipAddress.sipAddress);
+}
+
+function readFile(){
+var httpResponse4=sendGetHttpRequest("https://raw.githubusercontent.com/chuawh/demo/master/jsondata.txt","GET");
+var content=eval ("(" + httpResponse4[1] + ")");
+return(content);
 }
 
  startMyDemo(roomName);

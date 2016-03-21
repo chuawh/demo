@@ -47,6 +47,26 @@ function sendGetHttpRequest(urlString,method) {
     return [responseCode, result];  
 }
 
+function sendGetHttpRequest1(urlString,method) {
+    var url = new URL(urlString);
+    log("Opening connection.");
+    var connection = url.openConnection();
+    connection.setRequestMethod(method);
+    //connection.setRequestProperty('Content-Type', 'application/json');
+    //connection.setRequestProperty('Authorization', 'Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4');
+    
+    var responseCode = connection.getResponseCode();
+    log("Response is: " + responseCode);
+
+    var scanner = new Scanner(connection.getInputStream(), "UTF-8").useDelimiter("\\A");  
+    var result = scanner.next();
+    log("Result is: " + result);
+    scanner.close();
+    return [responseCode, result];  
+}
+
+
+
 
 //Get the content from SMS
 //var str=currentCall.initialText;
@@ -140,7 +160,7 @@ return(roomSipAddress.sipAddress);
 }
 
 function readFile(){
-var httpResponse4=sendGetHttpRequest("https://raw.githubusercontent.com/chuawh/demo/master/data.json","GET");
+var httpResponse4=sendGetHttpRequest1("https://raw.githubusercontent.com/chuawh/demo/master/data.json","GET");
 log("readFile is :" + httpResponse4[1]);
 var content=eval ("(" + httpResponse4[1] + ")");
 return(content);

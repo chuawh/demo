@@ -1,4 +1,4 @@
-{"fileUrl":"http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg",
+'{"fileUrl":"http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg",
  "agent":"+6597809414",
  "message":"Testing Spark Demo for Spark for room with name"
-}
+}'

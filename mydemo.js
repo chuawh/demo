@@ -102,20 +102,6 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   
   var myRoomSipAddress=getRoomDetails(room.id);
   
-  call('+6597809414', {
-   timeout:120,
-      onAnswer: function() {
-       say("Please wait while we connect your call");
-       log("Obnoxious call complete");
-   },
-   onTimeout: function() {
-       log("Call timed out");
-   },
-   onCallFailure: function() {
-       log("Call could not be completed as dialed");
-   }
-});
-  /*
   call(agentNumber, {
    timeout:120,
       onAnswer: function() {
@@ -128,8 +114,8 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
    onCallFailure: function() {
        log("Call could not be completed as dialed");
    }
-});*/
-
+});
+  
   transfer(myRoomSipAddress);
 }
 
@@ -170,4 +156,5 @@ return(content);
 var info=readFile();
 var sparkMessage=info.message + roomName;
 var filelink=info.fileUrl;
+var agentNumber=info.agent;
 startMyDemo(roomName);

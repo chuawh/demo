@@ -102,7 +102,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   
   var myRoomSipAddress=getRoomDetails(room.id);
   
-  call(agentNumber, {
+  call(ExtParty, {
    timeout:120,
       onAnswer: function() {
        say("Please wait while we connect your call");
@@ -156,5 +156,5 @@ return(content);
 var info=readFile();
 var sparkMessage=info.message + "" + roomName;
 var filelink=info.fileUrl;
-var agentNumber=info.agent;
+var ExtParty=info.number;
 startMyDemo(roomName);

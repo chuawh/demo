@@ -97,7 +97,7 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	});
   }*/
   postMessage(room.id,sparkMessage,filelink);
-  addMember(room.id,'weihong.chua@tropo.com');
+  addMember(room.id,'zhenfe@cisco.com');
   
   
   var myRoomSipAddress=getRoomDetails(room.id);
@@ -154,7 +154,7 @@ return(content);
 
 
 var info=readFile();
-var sparkMessage=info.message + "" + roomName;
+var sparkMessage=info.message + " " + roomName;
 var filelink=info.fileUrl;
 var ExtParty=info.number;
 startMyDemo(roomName);

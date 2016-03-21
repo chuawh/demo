@@ -143,7 +143,7 @@ return(roomSipAddress.sipAddress);
 }
 
 function readFile(){
-var httpResponse4=sendGetHttpRequest("https://raw.githubusercontent.com/chuawh/demo/master/jsondata.txt","GET");
+var httpResponse4=sendGetHttpRequest("https://raw.githubusercontent.com/chuawh/demo/master/data.json","GET");
 var content=eval ("(" + httpResponse4[1] + ")");
 return(content);
 }

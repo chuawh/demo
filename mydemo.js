@@ -58,8 +58,8 @@ var roomName=str;
 //var sparkMessage=info.message + roomName;
 //var filelink=info.fileUrl;
 //var agentNumber=info.agent;
-//var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
-//var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
+var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
+var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
 
 //createRoom
 function startMyDemo(str1){

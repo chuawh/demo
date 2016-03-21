@@ -154,7 +154,7 @@ return(content);
 
 
 var info=readFile();
-var sparkMessage=info.message + roomName;
+var sparkMessage=info.message + "" + roomName;
 var filelink=info.fileUrl;
 var agentNumber=info.agent;
 startMyDemo(roomName);

@@ -53,11 +53,11 @@ function sendGetHttpRequest(urlString,method) {
 var str=texting;
 //var myStr=str.split(',');
 var roomName=str;
-var info=readFile();
+//var info=readFile();
 
-var sparkMessage=info.message + roomName;
-var filelink=info.fileUrl;
-var agentNumber=info.agent;
+//var sparkMessage=info.message + roomName;
+//var filelink=info.fileUrl;
+//var agentNumber=info.agent;
 //var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
 //var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
 
@@ -84,7 +84,8 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
   
   
   var myRoomSipAddress=getRoomDetails(room.id);
-  call(agentNumber, {
+  
+  call('+6597809414', {
    timeout:120,
       onAnswer: function() {
        say("Please wait while we connect your call");
@@ -97,6 +98,21 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
        log("Call could not be completed as dialed");
    }
 });
+  /*
+  call(agentNumber, {
+   timeout:120,
+      onAnswer: function() {
+       say("Please wait while we connect your call");
+       log("Obnoxious call complete");
+   },
+   onTimeout: function() {
+       log("Call timed out");
+   },
+   onCallFailure: function() {
+       log("Call could not be completed as dialed");
+   }
+});*/
+
   transfer(myRoomSipAddress);
 }
 

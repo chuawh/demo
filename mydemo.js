@@ -10,7 +10,7 @@ function sendHttpRequest(urlString, body,method) {
     connection.setRequestMethod(method);
     connection.setDoOutput(true);
     connection.setRequestProperty('Content-Type', 'application/json');
-    connection.setRequestProperty('Authorization', 'Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4');
+    connection.setRequestProperty('Authorization', '');
 
     log("Sending output.");
     var output = new DataOutputStream(connection.getOutputStream());
@@ -35,7 +35,7 @@ function sendGetHttpRequest(urlString,method) {
     var connection = url.openConnection();
     connection.setRequestMethod(method);
     connection.setRequestProperty('Content-Type', 'application/json');
-    connection.setRequestProperty('Authorization', 'Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4');
+    connection.setRequestProperty('Authorization', ');
     
     var responseCode = connection.getResponseCode();
     log("Response is: " + responseCode);
@@ -52,9 +52,7 @@ function sendGetHttpRequest1(urlString,method) {
     log("Opening connection.");
     var connection = url.openConnection();
     connection.setRequestMethod(method);
-    //connection.setRequestProperty('Content-Type', 'application/json');
-    //connection.setRequestProperty('Authorization', 'Bearer MjliOTQyMDgtODMzZS00NWZjLWEyOWQtODljYTM2ZGMzN2I4OGE0ZmQzYzItNTk4');
-    
+   
     var responseCode = connection.getResponseCode();
     log("Response is: " + responseCode);
 

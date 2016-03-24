@@ -18,7 +18,3 @@ call('+' + agentNbr , {
 
 transfer('+' + customerNbr);
 
-message("The caller number is:" + currentCall.callerID + "The callee is: " + currentCall.calledID, {
-	    to:"+6597809414",
-	    network:"SMS"
-	});

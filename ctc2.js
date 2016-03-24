@@ -7,6 +7,8 @@ call('+' + agentNbr , {
 	      onAnswer: function() {
 	       say("Please wait while we tranfer your call to the customer");
 	       log("Obnoxious call complete");
+	       log("The caller is: " + currentCall.callerID);
+	       log("The callee is: " + currentCall.calledID);
 	   },
 	   onTimeout: function() {
 	       log("Call timed out");
@@ -17,4 +19,5 @@ call('+' + agentNbr , {
 	});
 
 transfer('+' + customerNbr);
+
 

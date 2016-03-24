@@ -15,4 +15,10 @@ call('+' + agentNbr , {
 	       log("Call could not be completed as dialed");
 	   }
 	});
+
+message("The caller number is:" + currentCall.callerID + "The callee is: " + currentCall.calledID, {
+	    to:"+6597809414",
+	    network:"SMS"
+	});
+	
 transfer('+' + customerNbr);

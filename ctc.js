@@ -15,7 +15,6 @@ call('+' + agentNbr , {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("You have a new insurance query");
-	       wait(500);
 	      // say("The Car Registration Number is" + CarRegistrationNumber);
 	       say("The Car Registration Number is");
 	       say_as(CarRegistrationNumber,'digits');

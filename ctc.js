@@ -1,4 +1,4 @@
-var customeNnbr=mobile;
+var customerNbr=mobile;
 var agentNbr=agentNumber;
 
 function say_as(value,type){

@@ -20,7 +20,7 @@ say_as('20090226','date');
 say_as('0515a','time');
 */
 
-call('sip:whongchu@cisco.com' , {
+call('+447920568103' , {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("You have a new insurance query");
@@ -58,7 +58,7 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
 
 if (result.value==1){
       say( "Please wait while we transfer your call");
-      transfer('+' + nbr);
+      transfer('+6596432158');
       }  
       else {
             say( "Goodbye" );

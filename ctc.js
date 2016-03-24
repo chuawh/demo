@@ -40,7 +40,7 @@ call('+' + agentNbr , {
 	   }
 	});
 	
-var result=ask("If you would like to speak to customer, Then Press 1. Else, press 9 to terminate this call", {
+var result=ask("If you would like to speak to the customer now, please Press 1. Else, press 9 to terminate this call", {
     choices:"1,9",
     terminator:"#",
     timeout:15.0,

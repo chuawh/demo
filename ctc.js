@@ -17,7 +17,7 @@ call('+' + agentNbr , {
 	       say("You have a new insurance query");
 	       wait(500);
 	      // say("The Car Registration Number is" + CarRegistrationNumber);
-	       say("The Car Registration Number is", {voice:"kate"});
+	       say("The Car Registration Number is");
 	       say_as(CarRegistrationNumber,'digits');
 	       wait(500);
 	       //say("The estimated car value is" + Carvalue);

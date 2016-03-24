@@ -18,6 +18,11 @@ call('+' + agentNbr , {
 	   }
 	});
 
-transfer('+' + customerNbr);
+transfer('+' + customerNbr, {
+	callerID:currentCall.calledID,
+	onTimeout: function(event) {
+        say("Sorry, but nobody answered");
+    }
+});
 
 

@@ -5,7 +5,7 @@ var agentNbr=agentNumber;
 call('+' + agentNbr , {
 	   timeout:60,
 	      onAnswer: function() {
-	       say("Pleawe wait while we tranfer your call to the customer");
+	       say("Please wait while we tranfer your call to the customer");
 	       log("Obnoxious call complete");
 	   },
 	   onTimeout: function() {

@@ -10,7 +10,7 @@ function say_as(value,type){
 }
  
 
-call('+85292118355' , {
+call('sip:whongchu@cisco.com' , {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("You have a new insurance query");
@@ -48,7 +48,7 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
 
 if (result.value==1){
       say( "Please wait while we transfer your call");
-      transfer('+442088248488');
+      transfer('+6597809414');
       }  
       else {
             say( "Goodbye" );

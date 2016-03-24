@@ -1,4 +1,5 @@
-var nbr=mobile;
+var customeNnbr=mobile;
+var agentNbr=agentNumber;
 
 function say_as(value,type){
     ssml_start="<?xml version='1.0'?><speak>";
@@ -10,7 +11,7 @@ function say_as(value,type){
 }
  
 
-call('sip:whongchu@cisco.com' , {
+call('+' agentNbr , {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("You have a new insurance query");
@@ -48,7 +49,7 @@ var result=ask("If you would like to speak to customer, Then Press 1. Else, pres
 
 if (result.value==1){
       say( "Please wait while we transfer your call");
-      transfer('+6597809414');
+      transfer('+ customerNbr);
       }  
       else {
             say( "Goodbye" );

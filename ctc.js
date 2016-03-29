@@ -43,6 +43,7 @@ var result=ask("If you would like to speak to the customer now, please Press 1. 
     choices:"1,9",
     terminator:"#",
     timeout:15.0,
+    bargein:true,
     mode:"dtmf",
     interdigitTimeout: 5,});
 

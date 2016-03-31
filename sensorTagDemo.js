@@ -1,4 +1,4 @@
-var nbrToDial=mobile;
+/*var nbrToDial=mobile;
 
 call('+' + nbrToDial , {
 	   timeout:60,
@@ -14,7 +14,7 @@ call('+' + nbrToDial , {
 	   onCallFailure: function() {
 	       log("Call could not be completed as dialed");
 	   }
-	});
+	});*/
 	
 message("An emergency alarm has been activated. Please join the emergency team Spark room now.Thank you", {
     to:"+6597809414",

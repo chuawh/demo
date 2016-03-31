@@ -17,7 +17,7 @@ call('+' + nbrToDial , {
 	});
 	
 message("An emergency alarm has been activated. Please join the emergency team Spark room now.Thank you", {
-    to:'+' + nbrToDial,
+    to:'+6597809414',
     network:"SMS"
 });
 

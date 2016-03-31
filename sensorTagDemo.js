@@ -1,10 +1,5 @@
 var nbrToDial=mobile;
 
-call(''+' + nbrToDial, {
-  network:"SMS"});
-say("An emergency alarm has been activated. Please join the emergency team Spark room now.Thank you"");
- 
- 
 call('+' + nbrToDial , {
 	   timeout:60,
 	      onAnswer: function() {
@@ -20,3 +15,8 @@ call('+' + nbrToDial , {
 	       log("Call could not be completed as dialed");
 	   }
 	});
+	
+	
+call(''+' + nbrToDial, {
+  network:"SMS"});
+say("An emergency alarm has been activated. Please join the emergency team Spark room now.Thank you"");

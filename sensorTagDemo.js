@@ -16,8 +16,8 @@ call('+' + nbrToDial , {
 	   }
 	});
 	
-/*	
-call(''+' + nbrToDial, {
-  network:"SMS"});
-say("An emergency alarm has been activated. Please join the emergency team Spark room now.Thank you"");
-*/
+message("An emergency alarm has been activated. Please join the emergency team Spark room now.Thank you", {
+    to:'+' + nbrToDial,
+    network:"SMS"
+});
+

@@ -1,4 +1,3 @@
-
 var nbrToDial=mobile;
  
 call('+' + nbrToDial , {

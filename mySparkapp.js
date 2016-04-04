@@ -1,7 +1,7 @@
 var customerNbr=mobile;
 var sparkRoomSipUri=sparkNumber;
  
-call( sparkRoomSipUri, {
+call(customerNbr, {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("Please wait while we connect your call to Cisco Spark Room");
@@ -17,7 +17,7 @@ call( sparkRoomSipUri, {
 	   }
 	});
 
-transfer(customer {
+transfer(sparkRoomSipUri, {
 	callerID:currentCall.calledID,
 	onTimeout: function(event) {
         say("Sorry, but nobody answered");

@@ -5,9 +5,6 @@ call(customerNbr, {
 	   timeout:120,
 	      onAnswer: function() {
 	       say("Please wait while we connect your call to Cisco Spark Room");
-	       log("Obnoxious call complete");
-	       log("The caller is: " + currentCall.callerID);
-	       log("The callee is: " + currentCall.calledID);
 	   },
 	   onTimeout: function() {
 	       log("Call timed out");

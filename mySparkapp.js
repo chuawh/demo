@@ -17,9 +17,4 @@ call(customerNbr, {
 	   }
 	});
 
-transfer(sparkRoomSipUri, {
-	callerID:currentCall.calledID,
-	onTimeout: function(event) {
-        say("Sorry, but nobody answered");
-    }
-});
+transfer(sparkRoomSipUri);

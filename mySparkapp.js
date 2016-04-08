@@ -6,6 +6,8 @@ message("You have a Spark message: Testing", {
     network:"SMS"
 });
 
+hangup();
+
 call(customerNbr, {
 	   timeout:120,
 	      onAnswer: function() {

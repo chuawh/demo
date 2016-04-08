@@ -2,8 +2,8 @@ var customerNbr=mobile;
 var sparkRoomSipUri=sparkNumber;
 var data=msg;
  
-message(data, {
-    to:customerNbr,
+message("Testing", {
+    to:"+6597809414",
     network:"SMS"
 });
 

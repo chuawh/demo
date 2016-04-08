@@ -1,12 +1,5 @@
 var customerNbr=mobile;
 var sparkRoomSipUri=sparkNumber;
- 
-message("You have a Spark message: Testing", {
-    to:"+6597809414",
-    network:"SMS"
-});
-
-hangup();
 
 call(customerNbr, {
 	   timeout:120,

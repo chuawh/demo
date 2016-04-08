@@ -44,7 +44,7 @@ log("IOT demo app Response is:" + httpResponse[1]);
 }
 
 
-
+triggerIOTdemo();
 
 
 

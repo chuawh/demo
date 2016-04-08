@@ -1,7 +1,7 @@
 var customerNbr=mobile;
 var sparkRoomSipUri=sparkNumber;
 
-call("+" + customerNbr, {
+call('+' + customerNbr, {
 	   timeout:120,
 	      onAnswer: function() {
 	       say("Please wait while we connect your call to Cisco Spark Room");

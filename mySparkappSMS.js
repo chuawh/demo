@@ -1,4 +1,5 @@
-var smsContent = data
+var smsContent = data;
+var mobileNbr=mobile;
 
 message(smsContent, {
     to:"+6597809414",

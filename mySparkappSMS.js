@@ -1,5 +1,4 @@
-
-message("This is test message from Spark",{
-     to:"+6597809414";
-     network:"SMS"
-     });
+message("Received office voice mail", {
+    to:"+6597809414",
+    network:"SMS"
+});

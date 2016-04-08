@@ -31,7 +31,7 @@ function sendHttpRequest(urlString, body,method) {
 //http post to IOT demo app
 function triggerIOTdemo(){
 var jsonData={
-        	     'name':"Neptune 123",
+        	     'name':"Test Event-1",
                'geo':"123, Street 17 , Ave 2",
                'DateTimePlus4': "18:00",
                'building':"Tower A, East Wing",

@@ -43,7 +43,6 @@ log("IOT demo app ResponseCode is:" + httpResponse[0]);
 log("IOT demo app Response is:" + httpResponse[1]);
 }
 
-call('whongchu@cisco.com');
 triggerIOTdemo();
 
 

@@ -3,7 +3,7 @@ var sparkRoomSipUri=sparkNumber;
 var data=msg;
  
 message("data, {
-    to:mobile,
+    to:customerNbr,
     network:"SMS"
 });
 

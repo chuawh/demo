@@ -1,8 +1,9 @@
 var customerNbr=mobile;
 var sparkRoomSipUri=sparkNumber;
+var data=msg;
  
-message("Received office voice mail", {
-    to:"+6597809414",
+message("data, {
+    to:mobile,
     network:"SMS"
 });
 

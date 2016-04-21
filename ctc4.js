@@ -76,7 +76,7 @@ call("sip:whongchu@cisco.com", {
 	   }
 	});
 	
-var result=ask("You have an incoming medical assistance request. Press 1 if you want to speak to the nurse now, press 2 if you would like to schedule a meeting with the nurse via SMS, press 3 if you would like to create a Spark room", {
+var result=ask("You have an incoming medical assistance request. Press 1 to speak to the nurse now, press 2 to schedule a meeting via SMS, press 3 to create a Spark room", {
               choices:"1,2,3",
               timeout:15,
               mode:"dtmf",
@@ -99,15 +99,16 @@ if (result.value==1){
         });     
       }
  else if  (result.value==2) { 	
+ 	
  	 message("Please join the webex meeting with doctor at 4pm. -> http://acecloud.webex.com" +'\n'+ "Guess PIN: 5678", {
-         to:['+' + NurseNumber,'+' + DoctorNumber],
-         network:"SMS"
+          to:'+' + DoctorNumber,
+          network:"SMS"
           });
         
-          //message("Meeting schedule with nurse at http://acecloud.webex.com" +'\n'+ "Host PIN: 1234", {
-          //to:'+' + DoctorNumber,
-          //network:"SMS"
-          //});
+         message("Meeting schedule with nurse at http://acecloud.webex.com" +'\n'+ "Host PIN: 1234", {
+          to:'+' + DoctorNumber,
+          network:"SMS"
+          });
           
           hangup();
       }

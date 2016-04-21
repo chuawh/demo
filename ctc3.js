@@ -13,7 +13,7 @@ call("sip:whongchu@cisco.com" , {
 	       log("Call could not be completed as dialed");
 	   }
 	});
-/*	
+	
 var result=ask("What would like to do? Please choose from the following option. Press 1 if you want to send an SMS to the doctor, Press 2 if you want to talk to the doctor now", {
               choices:"1,2",
               timeout:15,
@@ -22,6 +22,7 @@ var result=ask("What would like to do? Please choose from the following option. 
             });
 say("You chose" + result.value);
 
+/*
 if (result.value==1){
     message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234", {
     to:"+6597809414",

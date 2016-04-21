@@ -97,7 +97,7 @@ var result=ask("You have an incoming medical assistance request. Press 1 if you 
 say("You chose" + result.value);
 
 if (result.value==1){
-	message("Patient Details: " '\n' + "Patient Registration Number: " + PatientRegistrationNumber + '\n' + "Case Category: " + CaseCategory + '\n' + "Summary: " + Summary,{
+	message("Patient Details: " + '\n' + "Patient Registration Number: " + PatientRegistrationNumber + '\n' + "Case Category: " + CaseCategory + '\n' + "Summary: " + Summary,{
          to:'+' + DoctorNumber,
           network:"SMS"
           });

@@ -1,7 +1,7 @@
-var customerNbr=mobile;
-var agentNbr=agentNumber;
+//var customerNbr=mobile;
+//var agentNbr=agentNumber;
  
-call('+' + agentNbr , {
+call("whongchu@cisco.com" , {
 	   timeout:60,
 	      onAnswer: function() {
 	       log("Obnoxious call complete");
@@ -16,8 +16,7 @@ call('+' + agentNbr , {
 	   }
 	});
 	
-var result=ask("What would like to do? Please choose from the following option. 
-              Press 1 if you want to send an SMS to the doctor, Press 2 if you want to
+var result=ask("What would like to do? Please choose from the following option. Press 1 if you want to send an SMS to the doctor, Press 2 if you want to
               talk to the doctor now", {
               choices:"1,2",
               timeout:15,

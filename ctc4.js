@@ -27,7 +27,7 @@ function post(urlString, body) {
     return [responseCode, result];  
 }
 
-var NurseEmailladd=NurseEmail;
+var NurseEmailladd='''+ NurseEmail +''';
 var roomName='Diagnose outcome discussion';
 var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary; 
 

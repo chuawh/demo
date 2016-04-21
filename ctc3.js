@@ -22,18 +22,17 @@ var result=ask("What would you like to do? Please choose from the following opti
             });
 say("You chose" + result.value);
 
-if (result.value==1){
-		 message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234", {
-                 to:"+6597809414",
-                 network:"SMS"
-                  });
-        	} 
-       elself if (result.value==2) {	
-       say("Please wait while we transfer your call to the doctor");
+if (result.value==1)
+          message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234", {
+          to:"+6597809414",
+          network:"SMS"
+          });
+/*elself if (result.value==2) 	
+        say("Please wait while we transfer your call to the doctor");
        transfer("sip:whongchu@cisco.com", {
        	        timeout:30,
          	onTimeout: function(event) {
                     say("Sorry, but nobody answered");
                 }
-        });          
-      }
+        });     */     
+      

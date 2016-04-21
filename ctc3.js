@@ -102,8 +102,9 @@ var result=ask("What would you like to do? Please choose from the following opti
 say("You chose" + result.value);
 
 if (result.value==1)
-          message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234", {
-          to:"+6597809414",
+          message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234" +'\n'
+                   + "Patient Number: " + PatientRegistrationNumber +'\n'+ "Case Category: " + CaseCategory +'\n' + "Summary: " + Summary,  {
+          to:'+' + DoctorNumber,
           network:"SMS"
           });
  else if  (result.value==2) { 	

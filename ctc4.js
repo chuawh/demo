@@ -27,13 +27,13 @@ function post(urlString, body) {
     return [responseCode, result];  
 }
 
-
+var NurseEmailladd=NurseEmail;
 var roomName='Diagnose outcome discussion';
 var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary; 
 
 
 function createRoom(str1){
-var NurseEmailladd=NurseEmail;	
+//var NurseEmailladd=NurseEmail;	
 var jsonRoomName={'title':str1};
 var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName));
 log("ResponseCode is:" + httpResponse[0]);

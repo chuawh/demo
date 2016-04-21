@@ -32,7 +32,7 @@ function post(urlString, body) {
 }
 
 
-var roomName=Diagnose outcome discussion;
+var roomName='Diagnose outcome discussion';
 var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
 var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
 
@@ -115,8 +115,8 @@ if (result.value==1)
                 }
         });     
       }
-      else if  (result.value==3) {
-      	createRoom()
+else if  (result.value==3) {
+      	createRoom(roomName);
       } 
       else {
             say( "Goodbye" );

@@ -101,7 +101,7 @@ if (result.value==1){
  else if  (result.value==2) { 	
  	
  	 message("Please join the webex meeting with doctor at 4pm. -> http://acecloud.webex.com" +'\n'+ "Guess PIN: 5678", {
-          to:'+' + DoctorNumber,
+          to:'+' + NurseNumber,
           network:"SMS"
           });
         

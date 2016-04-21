@@ -33,8 +33,7 @@ function post(urlString, body) {
 
 
 var roomName='Diagnose outcome discussion';
-var sparkMessage='Testing Spark Demo for Spark for room with name '+ roomName;
-var filelink='http://media.caranddriver.com/images/media/51/25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg';
+var sparkMessage='Spark room discussion for patient: '+ '\n' + "Patient Registration Number: " + PatientRegistrationNumber + '\n' + "Case Category: " + CaseCategory + '\n' + "Summary: " + Summary; 
 
 
 function createRoom(str1){
@@ -54,13 +53,13 @@ message("The Spark Room named " + roomName + " has successfully created." + "The
 	    network:"SMS"
 	});
   }*/
-  postMessage(room.id,sparkMessage,filelink);
+  postMessage(room.id,sparkMessage);
   addMember(room.id,'weihong.chua@tropo.com');
 }
 
 
-function postMessage(str2,str3,str4){
-var messageJson={'roomId':str2, 'text':str3,'files':[str4]}; 
+function postMessage(str2,str3){
+var messageJson={'roomId':str2, 'text':str3}; 
 var httpResponse1= post("https://api.ciscospark.com/v1/messages",JSON.stringify(messageJson));
 log("ResponseCode is:" + httpResponse1[0]);
 log("The Spark Response is:" + httpResponse1[1]);
@@ -74,10 +73,6 @@ log("ResponseCode is:" + httpResponse2[0]);
 log("The Spark Response is:" + httpResponse2[1]);
 }
 
-
-
-
- 
 //Tropo app starts here 
  
 call("sip:whongchu@cisco.com" , {
@@ -93,7 +88,7 @@ call("sip:whongchu@cisco.com" , {
 	   }
 	});
 	
-var result=ask("Welcome to Telemedicine demo.  Please choose from the following option. Press 1 if you want to send a SMS meeting schedule to the doctor , Press 2 if you want to talk to the doctor now", {
+var result=ask("You have an incoming medical assistance request. Press 1 if you want to talk to the nurse now, press 2 if you would like to schedule a meeting with the nurse via SMS, press 3 if you would like to create a Spark room", {
               choices:"1,2,3",
               timeout:15,
               mode:"dtmf",
@@ -101,25 +96,20 @@ var result=ask("Welcome to Telemedicine demo.  Please choose from the following 
             });
 say("You chose" + result.value);
 
-if (result.value==1)
-          message("Please join the webex meeting at http://acecloud.webex.com with Host PIN: 1234" +'\n'
-                   + "Patient Number: " + PatientRegistrationNumber +'\n'+ "Case Category: " + CaseCategory +'\n' + "Summary: " + Summary,  {
-          to:'+' + DoctorNumber,
-          network:"SMS"
-          });
- else if  (result.value==2) { 	
- 	  message("Patient Details" +'\n'
-                   + "Patient Number: " + PatientRegistrationNumber +'\n'+ "Case Category: " + CaseCategory +'\n' + "Summary: " + Summary,  {
-          to:'+' + DoctorNumber,
-          network:"SMS"
-          });
-         say("Please wait while we transfer your call to the doctor");
+if (result.value==1){
+         say("Please wait while we transfer your call to the nurse");
          transfer("sip:whongchu@cisco.com", {
        	        timeout:30,
          	onTimeout: function(event) {
                     say("Sorry, but nobody answered");
                 }
         });     
+      }
+ else if  (result.value==2) { 	
+ 	 message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234", {
+         to:'+' + DoctorNumber,
+          network:"SMS"
+          });
       }
 else if  (result.value==3) {
       	createRoom(roomName);

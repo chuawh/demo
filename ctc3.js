@@ -93,7 +93,7 @@ call("sip:whongchu@cisco.com" , {
 	   }
 	});
 	
-var result=ask("What would you like to do? Please choose from the following option. Press 1 if you want to send an SMS to the doctor, Press 2 if you want to talk to the doctor now", {
+var result=ask("Welcome to Telemedicine demo.  Please choose from the following option. Press 1 if you want to send a SMS meeting schedule to the doctor , Press 2 if you want to talk to the doctor now", {
               choices:"1,2,3",
               timeout:15,
               mode:"dtmf",
@@ -102,12 +102,17 @@ var result=ask("What would you like to do? Please choose from the following opti
 say("You chose" + result.value);
 
 if (result.value==1)
-          message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234" +'\n'
+          message("Please join the webex meeting at http://acecloud.webex.com with Host PIN: 1234" +'\n'
                    + "Patient Number: " + PatientRegistrationNumber +'\n'+ "Case Category: " + CaseCategory +'\n' + "Summary: " + Summary,  {
           to:'+' + DoctorNumber,
           network:"SMS"
           });
  else if  (result.value==2) { 	
+ 	  message("Patient Details" +'\n'
+                   + "Patient Number: " + PatientRegistrationNumber +'\n'+ "Case Category: " + CaseCategory +'\n' + "Summary: " + Summary,  {
+          to:'+' + DoctorNumber,
+          network:"SMS"
+          });
          say("Please wait while we transfer your call to the doctor");
          transfer("sip:whongchu@cisco.com", {
        	        timeout:30,

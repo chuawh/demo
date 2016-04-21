@@ -94,7 +94,7 @@ call("sip:whongchu@cisco.com" , {
 	});
 	
 var result=ask("What would you like to do? Please choose from the following option. Press 1 if you want to send an SMS to the doctor, Press 2 if you want to talk to the doctor now", {
-              choices:"1,2",
+              choices:"1,2,3",
               timeout:15,
               mode:"dtmf",
               bargein:true

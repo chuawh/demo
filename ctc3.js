@@ -31,7 +31,7 @@ if (result.value==1){
        elself if (result.value==2) {	
        say("Please wait while we transfer your call to the doctor");
        transfer("sip:whongchu@cisco.com", {
-                callerID:currentCall.calledID,
+       	        timeout:30,
          	onTimeout: function(event) {
                     say("Sorry, but nobody answered");
                 }

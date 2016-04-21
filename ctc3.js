@@ -35,5 +35,5 @@ if (result.value==1){
          	onTimeout: function(event) {
                     say("Sorry, but nobody answered");
                 }
-        }          
+        });          
       }

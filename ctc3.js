@@ -27,7 +27,7 @@ if (result.value==1)
           to:"+6597809414",
           network:"SMS"
           });
- elself if (result.value==2) { 	
+ elself  (result.value==2) { 	
          say("Please wait while we transfer your call to the doctor");
          transfer("sip:whongchu@cisco.com", {
        	        timeout:30,

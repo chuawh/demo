@@ -63,7 +63,7 @@ log("The Spark Response is:" + httpResponse2[1]);
 
 //Tropo app starts here 
  
-call('+' + DoctorNumber, {
+call("sip:whongchu@cisco.com", {
 	   timeout:60,
 	      onAnswer: function() {
 	       log("Obnoxious call complete");

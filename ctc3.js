@@ -75,7 +75,7 @@ log("The Spark Response is:" + httpResponse2[1]);
 
 //Tropo app starts here 
  
-call("sip:whongchu@cisco.com" , {
+call('+' + DoctorNumber, {
 	   timeout:60,
 	      onAnswer: function() {
 	       log("Obnoxious call complete");
@@ -88,7 +88,7 @@ call("sip:whongchu@cisco.com" , {
 	   }
 	});
 	
-var result=ask("You have an incoming medical assistance request. Press 1 if you want to talk to the nurse now, press 2 if you would like to schedule a meeting with the nurse via SMS, press 3 if you would like to create a Spark room", {
+var result=ask("You have an incoming medical assistance request. Press 1 if you want to speak to the nurse now, press 2 if you would like to schedule a meeting with the nurse via SMS, press 3 if you would like to create a Spark room", {
               choices:"1,2,3",
               timeout:15,
               mode:"dtmf",
@@ -97,8 +97,13 @@ var result=ask("You have an incoming medical assistance request. Press 1 if you 
 say("You chose" + result.value);
 
 if (result.value==1){
+	message("Patient Details: " '\n' + "Patient Registration Number: " + PatientRegistrationNumber + '\n' + "Case Category: " + CaseCategory + '\n' + "Summary: " + Summary,{
+         to:'+' + DoctorNumber,
+          network:"SMS"
+          });
+          
          say("Please wait while we transfer your call to the nurse");
-         transfer("sip:whongchu@cisco.com", {
+         transfer('+' + NurseNumber, {
        	        timeout:30,
          	onTimeout: function(event) {
                     say("Sorry, but nobody answered");
@@ -106,8 +111,8 @@ if (result.value==1){
         });     
       }
  else if  (result.value==2) { 	
- 	 message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234", {
-         to:'+' + DoctorNumber,
+ 	 message("Please join the webex meeting at http://acecloud.webex.com" +'\n'+ "Host PIN: 1234", {
+         to:'+' + NurseNumber,
           network:"SMS"
           });
       }

@@ -38,7 +38,6 @@ var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registra
 
 function createRoom(str1){
 var jsonRoomName={'title':str1};
-log("********** The Room Name is ----> " + roomName + "*******************");
 var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName));
 log("ResponseCode is:" + httpResponse[0]);
 log("The Spark Response is:" + httpResponse[1]);
@@ -46,13 +45,6 @@ log("The Spark Response is:" + httpResponse[1]);
 var room=eval ("(" + httpResponse[1] + ")");
 log("The Spark Room ID is:" + room.id);
 
-/*
-if (httpResponse[0]==200) {
-message("The Spark Room named " + roomName + " has successfully created." + "The Room id is " + room.id, {
-	    to:"+6597809414",
-	    network:"SMS"
-	});
-  }*/
   postMessage(room.id,sparkMessage);
   addMember(room.id,'weihong.chua@tropo.com');
 }
@@ -120,6 +112,8 @@ if (result.value==1){
           to:'+' + DoctorNumber,
           network:"SMS"
           });
+          
+          hangup();
       }
 else if  (result.value==3) {
       	createRoom(roomName);

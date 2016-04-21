@@ -42,7 +42,7 @@ var room=eval ("(" + httpResponse[1] + ")");
 log("The Spark Room ID is:" + room.id);
 
   postMessage(room.id,sparkMessage);
-  addMember(room.id, NurseEmailadd);
+  addMember(room.id, 'weihong.chua@tropo.com');
 }
 
 

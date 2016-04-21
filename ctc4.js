@@ -27,12 +27,13 @@ function post(urlString, body) {
     return [responseCode, result];  
 }
 
-var NurseEmailladd='weihong.chua@tropo.com';
+
 var roomName='Diagnose outcome discussion';
 var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary; 
 
 
 function createRoom(str1){
+var NurseEmailladd='weihong.chua@tropo.com';	
 var jsonRoomName={'title':str1};
 var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName));
 log("ResponseCode is:" + httpResponse[0]);
@@ -42,7 +43,7 @@ var room=eval ("(" + httpResponse[1] + ")");
 log("The Spark Room ID is:" + room.id);
 
   postMessage(room.id,sparkMessage);
-  addMember(room.id, 'weihong.chua@tropo.com');
+  addMember(room.id, NurseEmailladd);
 }
 
 

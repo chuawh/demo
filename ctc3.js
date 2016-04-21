@@ -27,20 +27,14 @@ if (result.value==1){
                  to:"+6597809414",
                  network:"SMS"
                   });
-	}
-
-/* 	
-    message("Please join the webex meeting at http://acecloud.webex.com, Host PIN: 1234", {
-    to:"+6597809414",
-    network:"SMS"
-    });
-  }elseif (result.value==2){
-//    say("Please wait while we transfer your call to the doctor");
-transfer('+' + customerNbr, {
-	callerID:currentCall.calledID,
-	onTimeout: function(event) {
-        say("Sorry, but nobody answered");
+        	} 
+       elself if (result.value==2) 	
+       say("Please wait while we transfer your call to the doctor");
+       transfer("sip:whongchu@cisco.com", {
+       callerID:currentCall.calledID,
+         	onTimeout: function(event) {
+                 say("Sorry, but nobody answered");
     }
  });
 }
-*/
+

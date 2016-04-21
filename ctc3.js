@@ -27,12 +27,16 @@ if (result.value==1)
           to:"+6597809414",
           network:"SMS"
           });
- elself if (result.value==2) 	
-        say("Please wait while we transfer your call to the doctor");
+ elself if (result.value==2) { 	
+         say("Please wait while we transfer your call to the doctor");
          transfer("sip:whongchu@cisco.com", {
        	        timeout:30,
          	onTimeout: function(event) {
                     say("Sorry, but nobody answered");
                 }
         });     
-      
+      }
+      else {
+            say( "Goodbye" );
+            hangup();
+       }     

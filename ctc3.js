@@ -5,8 +5,6 @@ call("sip:whongchu@cisco.com" , {
 	   timeout:60,
 	      onAnswer: function() {
 	       log("Obnoxious call complete");
-	       log("The caller is: " + currentCall.callerID);
-	       log("The callee is: " + currentCall.calledID);
 	   },
 	   onTimeout: function() {
 	       log("Call timed out");
@@ -15,11 +13,11 @@ call("sip:whongchu@cisco.com" , {
 	       log("Call could not be completed as dialed");
 	   }
 	});
-	
+/*	
 var result=ask("What would like to do? Please choose from the following option. Press 1 if you want to send an SMS to the doctor, Press 2 if you want to talk to the doctor now", {
               choices:"1,2",
               timeout:15,
-              mode:"both",
+              mode:"dtmf",
               bargein:true
             });
 say("You chose" + result.value);
@@ -38,3 +36,4 @@ transfer('+' + customerNbr, {
     }
  });
 }
+*/

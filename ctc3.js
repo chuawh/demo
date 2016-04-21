@@ -1,7 +1,7 @@
 //var customerNbr=mobile;
 //var agentNbr=agentNumber;
  
-call("whongchu@cisco.com" , {
+call("sip:whongchu@cisco.com" , {
 	   timeout:60,
 	      onAnswer: function() {
 	       log("Obnoxious call complete");

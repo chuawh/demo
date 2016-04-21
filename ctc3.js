@@ -111,8 +111,13 @@ if (result.value==1){
         });     
       }
  else if  (result.value==2) { 	
- 	 message("Please join the webex meeting at http://acecloud.webex.com" +'\n'+ "Host PIN: 1234", {
+ 	 message("Please join the webex meeting with doctor at 4pm. -> http://acecloud.webex.com" +'\n'+ "Guess PIN: 5678", {
          to:'+' + NurseNumber,
+         network:"SMS"
+          });
+          
+          message("Meeting schedule with nurse at http://acecloud.webex.com" +'\n'+ "Host PIN: 1234", {
+          to:'+' + DoctorNumber,
           network:"SMS"
           });
       }

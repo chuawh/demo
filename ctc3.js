@@ -28,13 +28,12 @@ if (result.value==1){
                  network:"SMS"
                   });
         	} 
-       elself if (result.value==2) 	
+       elself if (result.value==2) {	
        say("Please wait while we transfer your call to the doctor");
        transfer("sip:whongchu@cisco.com", {
-       callerID:currentCall.calledID,
+                callerID:currentCall.calledID,
          	onTimeout: function(event) {
-                 say("Sorry, but nobody answered");
-    }
- });
-}
-
+                    say("Sorry, but nobody answered");
+                }
+        }          
+      }

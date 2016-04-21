@@ -27,7 +27,7 @@ function post(urlString, body) {
     return [responseCode, result];  
 }
 
-
+var NurseEmailladd=NurseEmail;
 var roomName='Diagnose outcome discussion';
 var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary; 
 
@@ -42,7 +42,7 @@ var room=eval ("(" + httpResponse[1] + ")");
 log("The Spark Room ID is:" + room.id);
 
   postMessage(room.id,sparkMessage);
-  addMember(room.id, NurseEmail);
+  addMember(room.id, NurseEmailadd);
 }
 
 

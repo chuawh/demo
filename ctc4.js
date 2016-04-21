@@ -33,7 +33,7 @@ var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registra
 
 
 function createRoom(str1){
-var NurseEmailladd='weihong.chua@tropo.com';	
+var NurseEmailladd=NurseEmail;	
 var jsonRoomName={'title':str1};
 var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName));
 log("ResponseCode is:" + httpResponse[0]);

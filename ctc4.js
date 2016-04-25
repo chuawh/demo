@@ -29,7 +29,8 @@ function post(urlString, body) {
 
 var NurseEmailladd=NurseEmail;
 var roomName='Diagnose outcome discussion';
-var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary; 
+var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary;
+var ask_tts='You have an incoming medical assistance request. Press 1 to speak to the nurse now, press 2 to schedule a meeting via SMS, press 3 to create a Spark room'
 
 
 function createRoom(str1){
@@ -77,7 +78,7 @@ call("sip:whongchu@cisco.com", {
 	   }
 	});
 	
-var result=ask("You have an incoming medical assistance request. Press 1 to speak to the nurse now, press 2 to schedule a meeting via SMS, press 3 to create a Spark room", {
+var result=ask(ask_tts, {
               choices:"1,2,3",
               timeout:15,
               mode:"dtmf",

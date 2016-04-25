@@ -34,7 +34,6 @@ var ask_tts='You have an incoming medical assistance request. Press 1 to speak t
 
 
 function createRoom(str1){
-//var NurseEmailladd=NurseEmail;	
 var jsonRoomName={'title':str1};
 var httpResponse= post("https://api.ciscospark.com/v1/rooms",JSON.stringify(jsonRoomName));
 log("ResponseCode is:" + httpResponse[0]);
@@ -65,7 +64,7 @@ log("The Spark Response is:" + httpResponse2[1]);
 
 //Tropo app starts here 
  
-call("sip:whongchu@cisco.com", {
+call('+'+ DoctorNumber, {
 	   timeout:60,
 	      onAnswer: function() {
 	       log("Obnoxious call complete");

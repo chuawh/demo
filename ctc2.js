@@ -5,7 +5,7 @@ var agentNbr=agentNumber;
 call("sip:86575974@cisco.com" , {
 	   timeout:60,
 	      onAnswer: function() {
-	       say("Please wait while we tranfer your call to the customer");
+	       say("Please wait while we transfer your call to the customer");
 	       log("Obnoxious call complete");
 	       log("The caller is: " + currentCall.callerID);
 	       log("The callee is: " + currentCall.calledID);

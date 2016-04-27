@@ -2,7 +2,7 @@
 var customerNbr=mobile;
 var agentNbr=agentNumber;
  
-call("sip:whongchu@cisco.com" , {
+call('+' + agentNbr , {
 	   timeout:60,
 	      onAnswer: function() {
 	       say("Please wait while we transfer your call to the customer");

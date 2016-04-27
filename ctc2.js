@@ -19,7 +19,7 @@ call('+' + agentNbr , {
 	});
 
 //transfer('+' + customerNbr, {
-	transfer("sip:whongchu@cisco.com", {
+	transfer("sip:86575974@cisco.com", {
 	callerID:currentCall.calledID,
 	onTimeout: function(event) {
         say("Sorry, but nobody answered");

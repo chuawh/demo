@@ -1,7 +1,3 @@
-//var customerNbr=mobile;
-//var agentNbr=agentNumber;
-
-
 importPackage(java.net);
 importPackage(java.io);
 importPackage(java.util);
@@ -33,7 +29,7 @@ function post(urlString, body) {
 
 
 var roomName='Diagnose outcome discussion';
-var sparkMessage='Spark room discussion for patient: '+ '\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary; 
+var sparkMessage='Spark room discussion for patient: '+ '\n\n' + 'Patient Registration Number: ' + PatientRegistrationNumber + '\n' + 'Case Category: ' + CaseCategory + '\n' + 'Summary: ' + Summary; 
 
 
 function createRoom(str1){

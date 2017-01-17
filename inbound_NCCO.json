@@ -1,0 +1,13 @@
+[
+                {
+                    "action": "connect",
+                    "eventUrl": ["http://requestb.in/1eo9is01"],
+                    "from": "441632960960",
+                    "endpoint": [
+                      {
+                        "type": "phone",
+                        "number": "6593845256"
+                      }
+                    ]
+                }
+]

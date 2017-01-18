@@ -1,19 +1,18 @@
 [
               {
                 "action": "talk",
-                 "text": "Please leave a message after the tone, then press #. We will get back to you as soon as we can",
+                 "text": "Please wait while we connect your call",
                  "voiceName": "Emma"
               },
-  
               {
-                    "action": "connect",
-                    "eventUrl": ["http://requestb.in/1eo9is01"],
-                    "from": "441632960960",
-                    "endpoint": [
+                "action": "connect",
+                "eventUrl": ["http://requestb.in/1eo9is01"],
+                "from": "441632960960",
+                   "endpoint": [
                       {
                         "type": "phone",
                         "number": "6568527019"
                       }
                     ]
-                }
+               }
 ]

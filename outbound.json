@@ -3,6 +3,10 @@
                 "action": "talk",
                  "text": "This is a test call from Nexmo",
                  "voiceName": "Emma"
+              },
+              {
+                "action": "stream",
+                "streamUrl": ["https://acme.com/streams/music.mp3"]
               }
          
 ]

@@ -6,7 +6,7 @@
               },
               {
                 "action": "connect",
-                "eventUrl": ["http://requestb.in/1i5c7311"],
+                "eventUrl": ["http://fd8cca62.ngrok.io"],
                 "from": "441632960960",
                    "endpoint": [
                       {

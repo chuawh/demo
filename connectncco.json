@@ -1,0 +1,10 @@
+  [  {
+                "action": "connect",
+                "eventUrl": ["http://7df2d914.ngrok.io"],
+                "from": "6593845256",
+                   "endpoint": [
+                      {
+                        "type": "phone",
+                        "number": "6568527019"
+                      }
+                    ]

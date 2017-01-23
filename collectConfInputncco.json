@@ -7,6 +7,6 @@
           {
             "action": "input",
             "submitOnHash": "true",
-            "eventUrl": ["https://example.com/ivr"]
+            "eventUrl": ["http://7df2d914.ngrok.io/confaccess"]
           }
  ]

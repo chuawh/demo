@@ -2,7 +2,7 @@
           {
             "action": "talk",
             "text": "Welcome to WeiHong's Conference. Please enter the access code followed by the hash key",
-            "bargeIn": True
+            "bargeIn": True,
             "voiceName": "Amy"
           },
           {

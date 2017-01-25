@@ -8,6 +8,7 @@
           {
             "action": "input",
             "submitOnHash": "true",
+             "timeout": 10,
             "eventUrl": ["http://533a94ee.ngrok.io/confaccess"]
           }
  ]

@@ -8,6 +8,6 @@
           {
             "action": "input",
             "submitOnHash": "true",
-            "eventUrl": ["http://7df2d914.ngrok.io/confaccess"]
+            "eventUrl": ["http://533a94ee.ngrok.io/confaccess"]
           }
  ]

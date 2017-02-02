@@ -9,6 +9,6 @@
             "action": "input",
             "submitOnHash": "true",
              "timeout": 10,
-            "eventUrl": ["https://confdemoapp.herokuapp.com/confaccess"]
+            "eventUrl": ["http://f3de5e46.ngrok.io/confaccess"]
           }
  ]

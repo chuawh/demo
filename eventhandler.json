@@ -1,5 +1,4 @@
-[     
-       {
+[{
                  "action": "talk",
                  "text": "Testing of Event Handler",
                  "voiceName": "Emma"
@@ -13,6 +12,5 @@
                    "endpoint": [{
                               "type": "phone",
                              "number": "6568527019"
-                             }],
-      }
-]
+                             }]
+      } ]

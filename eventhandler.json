@@ -1,18 +1,19 @@
 [
       
        {
-                "action": "talk",
+                 "action": "talk",
                  "text": "Testing of Event Handler",
                  "voiceName": "Emma"
        },
-      {
-      "action": "connect",
-      "from": "442038973123",
-      "timeout": "10",
-      "eventType": "synchronous",
-      "eventUrl": ["http://f3de5e46.ngrok.io"],
-      "endpoint": [{
-       "type": "phone",
-       "number": "6568527019"
-    }]
-}]
+       {
+                  "action": "connect",
+                  "from": "442038973123",
+                  "timeout": "10",
+                  "eventType": "synchronous",
+                  "eventUrl": ["http://f3de5e46.ngrok.io"],
+                   "endpoint": [{
+                              "type": "phone",
+                             "number": "6568527019"
+                             }],
+      }
+]

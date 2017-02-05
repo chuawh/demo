@@ -3,10 +3,6 @@
                 "action": "talk",
                  "text": "This is a test call from Nexmo",
                  "voiceName": "Emma"
-              },
-              {
-                "action": "stream",
-                "streamUrl": ["https://www.tropo.com/docs/troporocks.mp3"]
               }
-         
+             
 ]

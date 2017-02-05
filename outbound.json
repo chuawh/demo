@@ -1,7 +1,7 @@
 [
               {
                 "action": "talk",
-                 "text": "Hi, You are now listening to a message from WeiHong's Testing of API. This is a test call from Nexmo,st call from Nexmo",
+                 "text": "Hi, You are now listening to a message from WeiHong's Testing of API. This is an outbound test call from Nexmo API platform ",
                  "voiceName": "Emma"
               }
              

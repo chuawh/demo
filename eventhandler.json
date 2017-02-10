@@ -6,7 +6,7 @@
        {
                   "action": "connect",
                   "from": "442038973123",
-                  "timeout": "10",
+                  "timeout": "15",
                   "eventType": "synchronous",
                   "eventUrl": ["http://0bcb75d9.ngrok.io"],
                    "endpoint": [{

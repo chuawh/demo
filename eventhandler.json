@@ -8,7 +8,7 @@
                   "from": "442038973123",
                   "timeout": "15",
                   "eventType": "synchronous",
-                  "eventUrl": ["http://0bcb75d9.ngrok.io"],
+                  "eventUrl": ["http://mydemosite.ngrok.io"],
                    "endpoint": [{
                               "type": "phone",
                              "number": "6568527019"

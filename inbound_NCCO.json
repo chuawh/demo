@@ -14,9 +14,7 @@
                         "number": "6593845256"
                       }
                     ]
-               }
-
-
+               },
              {
                 "action": "connect",
                 "eventUrl": ["http://7df2d914.ngrok.io"],

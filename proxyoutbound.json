@@ -8,7 +8,7 @@
           {
             "action": "input",
             "submitOnHash": "true",
-             "timeout": 10,
+            "timeout": 10,
             "eventUrl": ["http://mydemosite.ngrok.io/callbuyer"]
           }
  ]

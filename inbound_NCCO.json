@@ -11,19 +11,9 @@
                    "endpoint": [
                       {
                         "type": "phone",
-                        "number": "6593845256"
-                      }
-                    ]
-               },
-             {
-                "action": "connect",
-                "eventUrl": ["http://7df2d914.ngrok.io"],
-                "from": "6593845256",
-                   "endpoint": [
-                      {
-                        "type": "phone",
-                        "number": "6597460794"
+                        "number": "6593845256,6597460794"
                       }
                     ]
                }
+   
 ]

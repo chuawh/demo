@@ -1,6 +1,6 @@
 [{
       "action": "connect",
-      "eventUrl": ["http://7df2d914.ngrok.io"],
+      "eventUrl": ["http://mydemosite.ngrok.io"],
        "from": "6593845256",
        "endpoint": [
                       {

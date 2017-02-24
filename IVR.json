@@ -1,0 +1,14 @@
+[
+          {
+            "action": "talk",
+            "text": "To confirm your booking. Please enter 1 followed by the hash key",
+            "bargeIn": true,
+            "voiceName": "Amy"
+          },
+          {
+            "action": "input",
+            "submitOnHash": "true",
+             "timeout": 10,
+            "eventUrl": ["http://mydemosite.ngrok.io/"]
+          }
+ ]

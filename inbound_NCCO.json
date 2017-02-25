@@ -14,6 +14,13 @@
                         "number": "6593845256"
                       }
                     ]
-               }
+               },
+               {
+                    "action": "transfer",
+                    "destination": {
+                             "type": "ncco",
+                               "url": ["https://example.com/ncco.json"]
+                     }
+                 }
    
 ]

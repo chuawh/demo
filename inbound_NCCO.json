@@ -11,7 +11,7 @@
                    "endpoint": [
                       {
                         "type": "phone",
-                        "number": "6593845256"
+                        "number": "6581133943"
                       }
                     ]
                },
@@ -19,7 +19,7 @@
                     "action": "transfer",
                     "destination": {
                              "type": "ncco",
-                               "url": ["https://example.com/ncco.json"]
+                               "url": ["https://raw.githubusercontent.com/chuawh/demo/master/inbound_NCCO.json"]
                      }
                  }
    

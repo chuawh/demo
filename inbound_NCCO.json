@@ -7,20 +7,12 @@
               {
                 "action": "connect",
                 "eventUrl": ["http://mydemosite.ngrok.io"],
-                "from": "6593845256",
                    "endpoint": [
                       {
                         "type": "phone",
-                        "number": "6581133943"
+                        "number": "6565977085"
                       }
                     ]
-               },
-               {
-                    "action": "transfer",
-                    "destination": {
-                             "type": "ncco",
-                               "url": ["https://raw.githubusercontent.com/chuawh/demo/master/inbound_NCCO.json"]
-                     }
-                 }
+               }
    
 ]

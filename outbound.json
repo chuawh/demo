@@ -1,8 +1,128 @@
 [
-              {
-                "action": "talk",
-                 "text": "Hi, You are now listening to a test message. This is an outbound test call from Nexmo API platform . Thank you and Goodbye!",
-                 "voiceName": "Emma"
-              }
-             
-]
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/otp2.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/0.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/9.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/8.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/0.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/9.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/8.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/otp2.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/0.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/9.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/8.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/0.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/9.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/8.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/otp2.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/0.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/9.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/8.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/0.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/9.wav"
+          ]
+      },
+      {
+          "action": "stream",
+          "streamUrl": [
+              "http://ecs7.tokopedia.net/otp/8.wav"
+          ]
+      }
+  ]

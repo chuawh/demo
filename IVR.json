@@ -9,6 +9,6 @@
             "action": "input",
             "submitOnHash": "true",
              "timeout": 15,
-            "eventUrl": ["http://mydemosite.ngrok.io/"]
+            "eventUrl": ["http://mydemosite.ngrok.io/dtmf_event"]
           }
  ]

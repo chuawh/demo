@@ -2,6 +2,29 @@
   {
     "action": "talk",
     "voiceName": "Russell",
-    "text": "The Pin Code is 1 2 3 4"
+    "text": "The Pin Code is"
+  }
+
+  {
+    "action": "talk",
+    "voiceName": "Russell",
+    "text": "1"
+  }
+
+  {
+    "action": "talk",
+    "voiceName": "Russell",
+    "text": "2"
+  }
+
+  {
+    "action": "talk",
+    "voiceName": "Russell",
+    "text": "3"
+  }
+  {
+    "action": "talk",
+    "voiceName": "Russell",
+    "text": "4"
   }
 ]

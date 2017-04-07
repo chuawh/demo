@@ -1,27 +1,6 @@
 [
   {
     "action": "talk",
-    "voiceName": "Russell",
-    "text": "The  NEW NEW Pin Code is"
-  },
-  {
-    "action": "talk",
-    "voiceName": "Russell",
-    "text": "1"
-  },
-  {
-    "action": "talk",
-    "voiceName": "Russell",
-    "text": "2"
-  },
-  {
-    "action": "talk",
-    "voiceName": "Russell",
-    "text": "3"
-  },
-  {
-    "action": "talk",
-    "voiceName": "Russell",
-    "text": "4"
+    "text": "The PIN Code is  1    2    3    4"
   }
 ]

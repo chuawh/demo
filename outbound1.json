@@ -1,6 +1,1 @@
-[
-  {
-    "action": "talk",
-    "text": "Testing for lunch actually"
-  }
-]
+[{"action":"talk","voiceName":"Russell","text":"Hi, this is Martti. You are listening to a text-to-speech Call made with Nexmo's Voice API"}]

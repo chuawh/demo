@@ -1,11 +1,17 @@
-[{
-      "action": "connect",
-      "eventUrl": ["http://mydemosite.ngrok.io/event"],
-       "from": "6593845256",
-       "endpoint": [
-                      {
-                        "type": "phone",
-                        "number": "639989984376"
-                      }
-                    ]
-}]
+[ 
+       {
+          "action": "talk",
+          "text": "This is test call for YesMy local connecitivity"
+       },
+       {
+          "action": "connect",
+          "eventUrl": ["http://mydemosite.ngrok.io/event"],
+          "from": "6593845256",
+          "endpoint": [
+                         {
+                            "type": "phone",
+                            "number": "639989984376"
+                          }
+                       ]
+       }
+]

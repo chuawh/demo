@@ -1,14 +1,19 @@
 [
           {
             "action": "talk",
-            "text": "You have a call from Desmond, to answer the call press 1. To end the call press 9",
-            "bargeIn": true,
+            "text": "We are connecting your call, please hold for a while",
             "voiceName": "Amy"
           },
           {
-            "action": "input",
-            "submitOnHash": "true",
-            "timeout": 10,
-            "eventUrl": ["http://mydemosite.ngrok.io/callbuyer"]
-          }
+          "action": "connect",
+          "eventUrl": ["http://mydemosite.ngrok.io/event"],
+          "from": "15102547113",
+          "endpoint": [
+                         {
+                            "type": "phone",
+                            "number": "6593845256",
+                            "dtmfAnswer": "2p02p"
+                          }
+                       ]
+             }
  ]

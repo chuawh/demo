@@ -1,7 +1,7 @@
 [ 
        {
           "action": "talk",
-          "text": "This is latency test call for Yes Mobile local connecitivity"
+          "text": "This is latency test call for Yes Mobile local connection"
        },
        {
           "action": "connect",
@@ -10,7 +10,7 @@
           "endpoint": [
                          {
                             "type": "phone",
-                            "number": "6581133943"
+                            "number": "60166116940"
                           }
                        ]
        }

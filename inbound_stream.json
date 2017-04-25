@@ -1,0 +1,23 @@
+[
+              {
+                "action": "talk",
+                 "text": "Please wait while we connect your call",
+                 "voiceName": "Emma"
+              },
+              {
+                "action": "connect",
+                "eventUrl": ["http://mydemosite.ngrok.io/event"],
+                   "endpoint": [
+                      {
+                        "type": "phone",
+                        "number": "6593845256"
+                      }
+                    ]
+               },
+               {
+                 "action": "stream",
+                 "stream_url": ["https://www.tropo.com/docs/troporocks.mp3"],
+                 "loop":"0"
+			        }
+               
+]

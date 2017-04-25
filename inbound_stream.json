@@ -1,7 +1,7 @@
 [
               {
                 "action": "talk",
-                 "text": "Please wait while we connect your call",
+                 "text": "Please wait while we connect your call, new call ",
                  "voiceName": "Emma"
               },
               {
@@ -16,8 +16,8 @@
                },
                {
                  "action": "stream",
-                 "stream_url": ["https://www.tropo.com/docs/troporocks.mp3"],
+                 "streamUrl": ["https://www.tropo.com/docs/troporocks.mp3"],
                  "loop":"0"
-			        }
+	       }
                
 ]

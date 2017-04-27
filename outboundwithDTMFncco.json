@@ -1,7 +1,7 @@
 [
           {
             "action": "talk",
-            "text": "This is a test call, press 1 to listen for more info",
+            "text": "This is a test call, press 1 to listen connect to your customer",
             "bargeIn": true,
             "voiceName": "Amy"
           },
@@ -9,6 +9,6 @@
             "action": "input",
             "submitOnHash": "true",
              "timeout": 10,
-            "eventUrl": ["http://mydemosite.ngrok.io"]
+            "eventUrl": ["http://mydemosite.ngrok.io/event"]
           }
  ]

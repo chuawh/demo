@@ -1,18 +1,6 @@
 [
-              {
-                "action": "talk",
-                 "text": "Please wait while we connect your call",
-                 "voiceName": "Emma"
-              },
-              {
-                "action": "connect",
-                "eventUrl": ["http://mydemosite.ngrok.io"],
-                   "endpoint": [
-                      {
-                        "type": "phone",
-                        "number": "6593845256"
-                      }
-                    ]
-               }
-   
+  {
+    "action": "talk",
+    "text": "You are listening to a Call made with Voice API"
+  }
 ]

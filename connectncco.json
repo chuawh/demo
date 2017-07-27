@@ -6,7 +6,7 @@
        {
           "action": "connect",
           "eventUrl": ["http://mydemosite.ngrok.io/event"],
-          "from": "+6531588003",
+          "from": "6531588003",
           "endpoint": [
                          {
                             "type": "phone",

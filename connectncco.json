@@ -1,7 +1,7 @@
 [ 
        {
           "action": "talk",
-          "text": "This is latency test call for Yes Mobile local connection 123"
+          "text": "This is latency test call for Yes Mobile local connection 100"
        },
        {
           "action": "connect",

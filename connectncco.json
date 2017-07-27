@@ -1,1 +1,17 @@
-
+[ 
+       {
+          "action": "talk",
+          "text": "This is latency test call for Yes Mobile local connection 145"
+       },
+       {
+          "action": "connect",
+          "eventUrl": ["http://mydemosite.ngrok.io/event"],
+          "from": "+6531588003",
+          "endpoint": [
+                         {
+                            "type": "phone",
+                            "number": "6593845256"
+                          }
+                       ]
+       }
+]

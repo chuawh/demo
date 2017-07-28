@@ -1,8 +1,5 @@
 [ 
-       {
-          "action": "talk",
-          "text": "This is latency test call for Yes Mobile local connection 100"
-       },
+      
        {
           "action": "connect",
           "eventUrl": ["http://mydemosite.ngrok.io/event"],

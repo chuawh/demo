@@ -3,11 +3,11 @@
           {
           "action": "connect",
           "eventUrl": ["http://mydemosite.ngrok.io/event"],
-           "from": "01117226220",
+           "from": "6531389918",
           "endpoint": [
                          {
                             "type": "phone",
-                            "number": "+60378433000"
+                            "number": "6593687275"
                           }
                        ]
              }

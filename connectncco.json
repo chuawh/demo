@@ -1,12 +1,9 @@
 [
-       {
-    "action": "record",
-    "eventUrl": ["http://mydemosite.ngrok.io/event"],
-    "endOnSilence": "3"
-     },
-       
- 
-       
+          {
+            "action": "record",
+             "eventUrl": ["http://mydemosite.ngrok.io/event"],
+             "endOnSilence": "3"
+          },
           {
           "action": "connect",
           "eventUrl": ["http://mydemosite.ngrok.io/event"],

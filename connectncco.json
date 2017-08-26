@@ -9,12 +9,7 @@
                             "number": "6563297537”
                           }
                        ]
-           },
-           {
-             "action": "record",
-             "eventUrl": ["http://mydemosite.ngrok.io/event"],
-              "endOnSilence": "3"
            }
-
+         
 ]
 

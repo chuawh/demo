@@ -9,7 +9,11 @@
                             "number": "6563297537”
                           }
                        ]
-           }
+           },
+          {
+            "action":"talk",
+            "text":"Hello"
+          }
          
 ]
 

@@ -1,4 +1,10 @@
 [        
+          
+          
+              {
+    "action": "talk",
+    "text": "You are listening to a Call made with Voice API"
+  },
           {
           "action": "connect",
           "eventUrl": ["http://mydemosite.ngrok.io/event"],
@@ -10,10 +16,7 @@
                           }
                        ]
            }
-       {
-    "action": "talk",
-    "text": "You are listening to a Call made with Voice API"
-  }
+   
          
 ]
 

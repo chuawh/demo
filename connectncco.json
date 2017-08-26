@@ -1,9 +1,5 @@
 [
-          {
-          "action": "record",
-          "eventUrl": ["http://mydemosite.ngrok.io/event"],
-          "endOnSilence": "3"
-          },
+         
           {
           "action": "connect",
           "eventUrl": ["http://mydemosite.ngrok.io/event"],
@@ -14,6 +10,11 @@
                             "number": "6581133943"
                           }
                        ]
-             }
+             },
+           {
+          "action": "record",
+          "eventUrl": ["http://mydemosite.ngrok.io/event"],
+          "endOnSilence": "3"
+          }
 
 ]

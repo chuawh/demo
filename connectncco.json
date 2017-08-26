@@ -1,14 +1,21 @@
 [
-         
-    {
-    "action": "talk",
-    "text": "You call will be recorded after the beep"
-    },   
-  {
-    "action": "record",
-    "eventUrl": ["http://mydemosite.ngrok.io/event"],
-    "beepStart": true,
-    "endOnSilence": "3"
-  }
+        
+          {
+          "action": "connect",
+          "eventUrl": ["http://mydemosite.ngrok.io/event"],
+           "from": "6531389918",
+          "endpoint": [
+                         {
+                            "type": "phone",
+                            "number": "65xxxxxxx”
+                          }
+                       ]
+           },
+           {
+          "action": "record",
+          "eventUrl": ["http://mydemosite.ngrok.io/event"],
+          "endOnSilence": "3"
+          }
 
 ]
+

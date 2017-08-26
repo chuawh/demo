@@ -1,4 +1,11 @@
 [
+       {
+    "action": "record",
+    "eventUrl": ["http://mydemosite.ngrok.io/event"],
+    "endOnSilence": "3"
+     },
+       
+ 
        
           {
           "action": "connect",
@@ -7,7 +14,7 @@
           "endpoint": [
                          {
                             "type": "phone",
-                            "number": "6593687275"
+                            "number": "6568527019"
                           }
                        ]
              }

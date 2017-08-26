@@ -6,7 +6,7 @@
     },   
   {
     "action": "record",
-    "eventUrl": ["http://mydemosite.ngrok.io"],
+    "eventUrl": ["http://mydemosite.ngrok.io/event"],
     "beepStart": true,
     "endOnSilence": "3"
   }

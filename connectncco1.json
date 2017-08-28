@@ -1,0 +1,17 @@
+[
+  {
+    "action": "connect",
+    "eventUrl": ["http://mydemosite.ngrok.io/event"],
+    "from":"6531389918",
+    "endpoint": [
+      {
+        "type": "phone",
+        "number": "6563297537"
+      }
+    ]
+  },
+  {
+    "action": "record",
+    "eventUrl": ["http://mydemosite.ngrok.io/event"]
+  }  
+]

@@ -9,6 +9,6 @@
             "action": "input",
             "submitOnHash": "true",
              "timeout": 10,
-            "eventUrl": ["http://mydemosite.ngrok.io/confaccess"]
+            "eventUrl": ["http://mydemosite.ngrok.io/event"]
           }
  ]

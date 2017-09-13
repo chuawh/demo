@@ -1,5 +1,10 @@
 [
   {
+      "action": "record",
+      "eventUrl": ["http://mydemosite.ngrok.io/events"],
+      "endOnSilence" : "3"
+  },
+  {
     "action": "talk",
     "text": "Go To Sleep Now, Stop playing!!!"
   }

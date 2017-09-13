@@ -1,7 +1,7 @@
 [
   {
       "action": "record",
-      "eventUrl": ["http://mydemosite.ngrok.io/events"],
+      "eventUrl": ["http://mydemosite.ngrok.io/event"],
       "endOnSilence" : "3"
   },
   {

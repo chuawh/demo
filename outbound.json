@@ -2,7 +2,7 @@
   {
       "action": "record",
       "eventUrl": ["http://mydemosite.ngrok.io/event"],
-      "endOnSilence" : "2"
+      "endOnSilence" : "10"
   },
   {
     "action": "talk",

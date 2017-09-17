@@ -1,6 +1,32 @@
 [
-  {
-    "action": "talk",
-    "text": "Nexmo API is super easy"
-  }
+    {
+        "streamUrl": [
+            "https://www.rupiahplus.com/callback/SmsPreWording.mp3"
+        ],
+        "action": "stream"
+    },
+    {
+        "streamUrl": [
+            "https://www.rupiahplus.com/callback/NUMBER_1.mp3"
+        ],
+        "action": "stream"
+    },
+    {
+        "streamUrl": [
+            "https://www.rupiahplus.com/callback/NUMBER_6.mp3"
+        ],
+        "action": "stream"
+    },
+    {
+        "streamUrl": [
+            "https://www.rupiahplus.com/callback/NUMBER_7.mp3"
+        ],
+        "action": "stream"
+    },
+    {
+        "streamUrl": [
+            "https://www.rupiahplus.com/callback/NUMBER_6.mp3"
+        ],
+        "action": "stream"
+    }
 ]

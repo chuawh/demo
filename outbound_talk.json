@@ -1,32 +1,23 @@
 [
     {
-        "streamUrl": [
-            "https://www.rupiahplus.com/callback/SmsPreWording.mp3"
-        ],
-        "action": "stream"
+        "action": "stream",
+        "streamUrl": ["https://www.rupiahplus.com/callback/SmsPreWording.mp3"]
     },
     {
-        "streamUrl": [
-            "https://www.rupiahplus.com/callback/NUMBER_1.mp3"
-        ],
-        "action": "stream"
+         "action": "stream",   
+         "streamUrl": ["https://www.rupiahplus.com/callback/NUMBER_1.mp3"]
     },
     {
-        "streamUrl": [
-            "https://www.rupiahplus.com/callback/NUMBER_6.mp3"
-        ],
-        "action": "stream"
+        "action": "stream",
+        "streamUrl": ["https://www.rupiahplus.com/callback/NUMBER_6.mp3"]
+      
     },
     {
-        "streamUrl": [
-            "https://www.rupiahplus.com/callback/NUMBER_7.mp3"
-        ],
-        "action": "stream"
+        "action": "stream",
+        "streamUrl": ["https://www.rupiahplus.com/callback/NUMBER_7.mp3"]
     },
     {
-        "streamUrl": [
-            "https://www.rupiahplus.com/callback/NUMBER_6.mp3"
-        ],
-        "action": "stream"
+        "action": "stream",
+        "streamUrl": ["https://www.rupiahplus.com/callback/NUMBER_6.mp3"]
     }
 ]

@@ -1,13 +1,18 @@
-[{
-             "action": "stream",
-             "streamUrl": ["https://s3.amazonaws.com/wisely_static/voice/Wisely+Support+Voicemail.mp3"]},
-             {
-             "action": "record",
-             "eventUrl": ["http://mydemosite.ngrok.io/event"],
-             "beepStart": "true",
-             "endOnSilence": "3",
-             "endOnKey": "#"
-}]
+[
+  {
+    "action": "connect",
+    "timeout": "15",
+    "eventUrl": ["http://mydemosite.ngrok.io/voicemail"],
+    "eventType": "synchronous",
+    "from":"6531572003",
+    "endpoint": [
+      {
+        "type": "phone",
+        "number": "6593845256"
+      }
+    ]
+  }
+]
 
 
 

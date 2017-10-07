@@ -1,0 +1,7 @@
+[   
+         {
+                 "action": "stream",
+                 "streamUrl": ["https://www.tropo.com/docs/troporocks.mp3"],
+                 "loop":"0"
+	       }              
+]

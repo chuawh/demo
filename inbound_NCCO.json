@@ -1,6 +1,7 @@
 [
   {
     "action": "talk",
-    "text": "Nexmo API is super easy"
+    "text": "Nexmo API is super easy",
+    "loop":"0"
   }
 ]

@@ -2,9 +2,9 @@
   {
     "action": "connect",
     "timeout": "15",
-    "eventUrl": ["http://mydemosite.ngrok.io/voicemail"],
+    "eventUrl": ["http://mydemosite.ngrok.io/event"],
     "eventType": "synchronous",
-    "from":"6531572003",
+    "from":"6531389920",
     "endpoint": [
       {
         "type": "phone",

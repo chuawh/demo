@@ -1,5 +1,6 @@
 [{
     "action": "input",
+    "timeout":"15",
     "eventUrl": ["http://mydemosite.ngrok.io/event"]
  }
 ]

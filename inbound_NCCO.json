@@ -1,4 +1,5 @@
 [{
   "action":"talk",
-  "text":""
+  "text":"hello, please wait while we connect your call",
+  "loop":"0"
 }]

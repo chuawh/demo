@@ -4,20 +4,14 @@
     "timeout": "15",
     "eventUrl": ["http://mydemosite.ngrok.io/event"],
     "eventType": "synchronous",
-    "from":"6531389920",
+    "from":"6531389797",
     "endpoint": [
       {
         "type": "phone",
-        "number": ""
+        "number": "6596889721"
       }
     ]
-  },
-  {
-                "action": "record",
-                "eventUrl": ["http://mydemosite.ngrok.io/recordings"],
-                "beepStart":"true"
-
-            }
+  }
 ]
 
 

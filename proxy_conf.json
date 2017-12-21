@@ -1,7 +1,7 @@
 [
       {
         "action": "talk",
-        "text": "Hi {number} Please wait while we connect you into the super conference"
+        "text": "Hi, Please wait while we connect you into the super conference"
       },
       {
         "action": "conversation",

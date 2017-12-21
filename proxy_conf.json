@@ -1,0 +1,15 @@
+[
+      {
+        "action": "talk",
+        "text": "Please wait while we connect you"
+      },
+      // When we connect the inbound call to a conference
+      // we keep them on hold and play a ringing sound
+      // until the operator is connected
+      {
+        "action": "conversation",
+        "name": "conversation_proxy",
+        "startOnEnter": "false",
+        "musicOnHoldUrl": ["https://nexmo-community.github.io/ncco-examples/assets/phone-ringing.mp3"]
+      }
+    ]

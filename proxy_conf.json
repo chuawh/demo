@@ -5,7 +5,7 @@
       },
       {
         "action": "conversation",
-        "name": "conversation_proxy",
+        "name": "conversationproxy",
         "startOnEnter": "false",
         "musicOnHoldUrl": ["https://nexmo-community.github.io/ncco-examples/assets/phone-ringing.mp3"]
       }

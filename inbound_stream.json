@@ -1,23 +1,12 @@
 [
               {
                 "action": "talk",
-                 "text": "Please wait while we connect your call, new call ",
+                 "text": "Please wait while we connect your call ",
                  "voiceName": "Emma"
               },
               {
-                "action": "connect",
-		"from": "6531572003",
-                "eventUrl": ["http://mydemosite.ngrok.io/event"],
-                   "endpoint": [
-                      {
-                        "type": "phone",
-                        "number": "6593845256"
-                      }
-                    ]
-               },
-               {
                  "action": "stream",
-                 "streamUrl": ["https://www.tropo.com/docs/troporocks.mp3"],
+                 "streamUrl": ["http://mydemosite.ngrok.io/modown_YC.wav"],
                  "loop":"0"
 	       }
                

@@ -1,6 +1,7 @@
 [
   {
-    "action": "stream",
-    "streamUrl": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
+    "action": "talk",
+    "text": "Baik, terima kasih.Saya tidak bisa bicara bahasa Indonesia",
+    "VoiceName":"Damayanti"
   }
 ]

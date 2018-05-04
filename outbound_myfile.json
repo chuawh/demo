@@ -1,7 +1,7 @@
 [
   {
     "action": "talk",
-    "text": "<speak>Ini panggilan dari Indonesia.Terima kasih kepada anda menjawab panggilan saya.Saya bisa bicara bahasa Indonesia and English</speak>",
+    "text": "<speak>Ini panggilan dari <break time='1s' /> Indonesia.Terima kasih kepada anda menjawab panggilan saya.Saya bisa bicara bahasa Indonesia and English</speak>",
     "voiceName":"Damayanti"
   }
 ]

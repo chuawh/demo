@@ -3,26 +3,5 @@
     "action": "talk",
     "text": "Kode verfikasi anda adalah 1,2,3,4",
     "voiceName":"Damayanti"
-  },
-  
- /*  {
-    "action": "talk",
-    "text": "1",
-    "voiceName":"Damayanti"
-  },
-  {
-    "action": "talk",
-    "text": "2",
-    "voiceName":"Damayanti"
-  },
-  {
-    "action": "talk",
-    "text": "3",
-    "voiceName":"Damayanti"
-  },
-   {
-    "action": "talk",
-    "text": "4",
-    "voiceName":"Damayanti"
-  }*/
+  }
 ]

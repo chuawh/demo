@@ -11,15 +11,30 @@
   },
   {
     "action": "talk",
+    "text": " ",
+    "voiceName":"Damayanti"
+  },
+  {
+    "action": "talk",
     "text": "2",
     "voiceName":"Damayanti"
   },
   {
     "action": "talk",
+    "text": " ",
+    "voiceName":"Damayanti"
+  }
+  {
+    "action": "talk",
     "text": "3",
     "voiceName":"Damayanti"
   },
-   {
+  {
+    "action": "talk",
+    "text": " ",
+    "voiceName":"Damayanti"
+  },
+  {
     "action": "talk",
     "text": "4",
     "voiceName":"Damayanti"

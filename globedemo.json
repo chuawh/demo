@@ -1,8 +1,8 @@
 [
     {
         "action": "talk",
-        "text": "<speak>Welcome to a <break time='2s' /> This is Voice API demo for Globe Labs</speak>",
-        "voiceName": "Amy",
+        "text": "<speak>Welcome to Nexmo<break time='2s' /> This is Voice API demo for Globe Labs</speak>",
+        "voiceName": "Emma",
         "bargeIn": false
     }
 ]

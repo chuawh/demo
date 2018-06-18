@@ -1,0 +1,23 @@
+[
+  {
+    "action":"talk",
+    "text":"Please wait while we connect you"
+  },
+  {
+    "action":"connect",
+    "eventUrl":[
+      "https://example.com/events"
+    ],
+    "from":"6531389685",
+    "endpoint":[
+      {
+        "type":"websocket",
+        "uri":"ws://mydemosite.ap.ngrok.io/socket",
+        "content-type":"audio/l16;rate=16000",
+        "headers":{
+          "whatever":"metadata_you_want"
+        }
+      }
+    ]
+  }
+]

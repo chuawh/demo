@@ -1,7 +1,7 @@
 [
           {
             "action": "talk",
-            "text": "<speak><break time=‘1s’ />Good Afternoon, Welcome to Nexmo API Call. Pls hold while we connect your call.</speak>",
+            "text": "<speak><break time=‘1s’ />Welcome to Nexmo API Call. Pls hold while we connect your call.</speak>",
             "voiceName": "Amy"
           },
           {

@@ -1,7 +1,7 @@
 [
           {
             "action": "talk",
-            "text": "<speak><break time='1s' />We are connecting your call, please hold for a while</speak>",
+            "text": "<speak><break time='10s' />We are connecting your call, please hold for a while</speak>",
             "voiceName": "Amy"
           },
           {
@@ -10,7 +10,7 @@
           "endpoint": [
                          {
                             "type": "phone",
-                            "number": "6581133943"
+                            "number": "6511111"
                           }
                        ]
              }

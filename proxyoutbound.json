@@ -1,7 +1,7 @@
 [
           {
             "action": "talk",
-            "text": "We are connecting your call, please hold for a while",
+            "text": "<speak><break time='1s' />We are connecting your call, please hold for a while</speak>",
             "voiceName": "Amy"
           },
           {

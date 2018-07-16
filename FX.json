@@ -5,6 +5,6 @@
   },
   {
     "action": "input",
-    "eventUrl": ["https://fxs.nexmo.azurewebsites.net/Voice/GetCall"]
+    "eventUrl": ["https://fxs.nexmo.azurewebsites.net/dtmf"]
   }
 ]

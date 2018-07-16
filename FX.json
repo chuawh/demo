@@ -1,0 +1,10 @@
+[
+  {
+    "action": "talk",
+    "text": "This is a call from Fuji Xerox. Please Enter 1 if you are safe, Enter 2 if you are in danger"
+  },
+  {
+    "action": "input",
+    "eventUrl": ["https://fxs.nexmo.azurewebsites.net/Voice/GetCall"]
+  }
+]

@@ -7,6 +7,6 @@
     "action": "input",
     "timeOut": "30",
     "submitOnHash": "true",
-    "eventUrl": ["https://fxs.nexmo.azurewebsites.net/Voice/dtmf"]
+    "eventUrl": ["https://fxs.nexmo.azurewebsites.net/Voice/DTMF"]
   }
 ]

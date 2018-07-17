@@ -1,0 +1,12 @@
+[
+  {
+    "action": "talk",
+    "text": "This is a call from Fuji Xerox. Please Enter 1 if you are safe, Enter 2 if you are in danger"
+  },
+  {
+    "action": "input",
+    "timeOut": "30",
+    "submitOnHash": "true",
+    "eventUrl": ["http://mydemosite.ap.ngrok.io/events"]
+  }
+]

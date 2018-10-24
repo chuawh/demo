@@ -1,10 +1,5 @@
 [
   {
-      "action": "record",
-      "eventUrl": ["http://mydemosite.ap.ngrok.io/event"],
-      "endOnSilence" : "10"
-  },
-  {
     "action": "talk",
     "text": "This is outbound call Test, pay attention to the hissing noise in the call when silence"
   }

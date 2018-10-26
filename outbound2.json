@@ -2,7 +2,7 @@
     "action": "talk",
     "text": "<speak><prosody rate='slow'>To listen to the full message, press one to continue</prosody><break time='1s' /></speak>",
     "bargeIn": true,
-    "loop": "1"
+    "loop": "3"
 }, {
     "action": "input",
     "eventUrl": ["http://mydemosite.ap.ngrok.io/input"],

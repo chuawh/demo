@@ -6,6 +6,7 @@
           },
           {
           "action": "connect",
+          "from": "6531389797",
           "eventUrl": ["https://mydemosite.ap.ngrok.io/events"],
           "endpoint": [
                          {

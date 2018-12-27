@@ -6,7 +6,7 @@
           },
           {
           "action": "connect",
-          "eventUrl": ["http://mydemosite.ap.ngrok.io/events"],
+          "eventUrl": ["https://mydemosite.ap.ngrok.io/events"],
           "endpoint": [
                          {
                             "type": "phone",

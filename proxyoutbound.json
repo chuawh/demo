@@ -6,11 +6,11 @@
           },
           {
           "action": "connect",
-          "eventUrl": ["http://mydemosite.ngrok.io/event"],
+          "eventUrl": ["http://mydemosite.ap.ngrok.io/event"],
           "endpoint": [
                          {
                             "type": "phone",
-                            "number": "6511111"
+                            "number": "6594460794"
                           }
                        ]
              }

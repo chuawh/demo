@@ -1,11 +1,6 @@
-[{
-    "action": "talk",
-    "text": "<speak><prosody rate='slow'>To listen to the full message, press one to continue</prosody><break time='1s' /></speak>",
-    "bargeIn": true,
-    "loop": "3"
-}, {
-    "action": "input",
-    "eventUrl": ["http://mydemosite.ap.ngrok.io/input"],
-    "maxDigits": "1",
-    "eventMethod": "post"
-}]
+[
+  {
+    "action": "stream",
+    "streamUrl": ["https://cdn.chime.me/doc/fs01/dialer/20170922/4/2K3eW6I5.mp3"]
+  }
+]

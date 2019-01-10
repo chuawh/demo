@@ -1,7 +1,7 @@
 {
-      action: "talk",
-      text: "Thank you for calling Jamie"
-    },
+      "action": "talk",
+      "text": "Thank you for calling Jamie"
+ },
     {
       "action": "connect",
       "from": "6531389797",
